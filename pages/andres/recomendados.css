@@ -29,9 +29,9 @@ body {
 .contenedor .contenido,
 .contenedor .sidebar,
 .contenedor .footer {
-	background: #fff;
+	background: #e6c1c1;
 	padding: 20px;
-	border-radius: 4px;
+	border-radius: 3px;
 	}
 
 .contenedor .header {
@@ -42,6 +42,7 @@ body {
 
 .contenedor .contenido {
 	grid-area: contenido;
+
 	}
 
 .contenedor .sidebar {
@@ -92,8 +93,8 @@ body {
 	background-image: url(img/aprendizajebasadoenproyectos.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
-	box-shadow: 0vw 0vh 3vw rgba(202, 21, 21, 0.5);
-	height: 20vh;
+	box-shadow: 0vw 0vh 6vw rgba(202, 21, 21, 0.5);
+	height: 30vh;
 	position: relative;
 	margin-bottom: 5vh;
 }
@@ -119,4 +120,5 @@ body {
 	100% {background-image: url(img/MI_AMIGO_VAN_GOGH_B.jpg); left: 0vw; top: 0vh;}
 
 }
+
 
