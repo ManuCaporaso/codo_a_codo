@@ -16,11 +16,12 @@ body {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, auto);
+	grid-template-rows: repeat(5, auto);
 
 	grid-template-areas: "header header header"
 						 "contenido contenido sidebar"
 						 "widget-1 widget-2 sidebar"
+						 "widget-3 widget-4 sidebar"
 						 "footer footer footer";
 }
 
@@ -55,8 +56,7 @@ body {
 	grid-area: sidebar;
 }
 
-.contenedor .widget-1,
-.contenedor .widget-2 {
+.contenedor .widgets {
 	background: #55a8fd;
 	color: #fff;
 	height: 100px;
@@ -73,7 +73,13 @@ body {
 .contenedor .widget-2 {
 	grid-area: widget-2;
 }
+.contenedor .widget-3 {
+	grid-area: widget-3;
+}
 
+.contenedor .widget-4 {
+	grid-area: widget-4;
+}
 .contenedor .footer {
 	background: #12203E;
 	color: #fff;
@@ -89,10 +95,11 @@ body {
 						 "footer footer footer";
 	}
 }
+.contenido section {
+	display: flex;
+	gap: 1rem;
+}
 .destacadomes{
-	background-image: url(img/aprendizajebasadoenproyectos.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
 	box-shadow: 0vw 0vh 6vw rgba(202, 21, 21, 0.5);
 	height: 30vh;
 	position: relative;
