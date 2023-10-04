@@ -91,19 +91,30 @@ body {
 		grid-template-areas: "header header header"
 						 "contenido contenido contenido"
 						 "sidebar sidebar sidebar"
-						 "widget-1 widget-1 widget-2"
+						 "widget-1 widget-1 widget-1"
+						 "widget-2 widget-2 widget-2"
+						 "widget-3 widget-3 widget-3"
+						 "widget-4 widget-4 widget-4"
 						 "footer footer footer";
+	}
+	.comprasmes{
+		background-position: center;
 	}
 }
 .contenido section {
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
 }
 .destacadomes{
 	box-shadow: 0vw 0vh 6vw rgba(202, 21, 21, 0.5);
 	height: 30vh;
 	position: relative;
 	margin-bottom: 5vh;
+}
+.text{
+	display: flex;
+	flex-direction: column;
+	gap: 0.9rem;
 }
 .comprasmes{
 	background-image: url(img/aprendizajebasadoenproyectos.jpg);

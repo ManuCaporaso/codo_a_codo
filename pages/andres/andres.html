@@ -19,11 +19,16 @@
         <main class="contenido">
             <h2>Destacado del Mes</h2>
             <br>
-            <div></div>
-            <div></div>
+
             <section>
-                <img  class="destacadomes" src="img/aprendizajebasadoenproyectos.jpg" alt="">
-                <h2> ficha</h2>
+                <img class="destacadomes" src="img/aprendizajebasadoenproyectos.jpg" alt="">
+                <aside class="text">
+                    <h3>Título: Aprendizaje basado en proyectos</h3>
+                    <h3>Autor: Silvana Carnicero Sanguinetti</h3>
+                    <h3>Año: 2023</h3>
+                    <h3>Editorial: Noveduc</h3>
+                    <h3>Temática: Proyectos, Educación</h3>
+                </aside>
             </section>
 
         </main>
@@ -41,7 +46,7 @@
         </aside>
 
         <div class="widget-1 widgets">
-            <h3>WIDGET 1</h3>
+            <h3>Búsqueda de Libros por género</h3>
             <p>Tapa y descripción del libro 1</p>
         </div>
         <div class="widget-2 widgets">
@@ -49,8 +54,12 @@
             <p>Tapa y descripción del libro 1</p>
         </div>
         <div class="widget-3 widgets">
-            <h3>WIDGET 3</h3>
-            <p>Tapa y descripción del libro 3</p>
+            <h4>Buscador de Libros</h4>
+            <input type="text" id="searchInput" placeholder="Escribe el autor o título del libro">
+            <button onclick="searchBooks()">Buscar</button>
+            <div id="results"></div>
+            <script src="js/buscarlibros.js"></script>
+
         </div>
         <div class="widget-4 widgets">
             <h3>WIDGET 4</h3>
