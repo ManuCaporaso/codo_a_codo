@@ -1,13 +1,12 @@
-// Base de datos de libros
 const libros = [
-
-    { titulo: "Cien años de soledad", autor: "Gabriel García Márquez", genero: "Ficción", prestado: false, tematica: "Literatura"},
+    { titulo: "Cien años de soledad", autor: "Gabriel García Márquez", genero: "Ficción", prestado: false, tematica: "Literatura" },
     { titulo: "Clean Code", autor: "Robert C. Martin", genero: "Programación", prestado: true, tematica: "Informática" },
     { titulo: "El Señor de los Anillos", autor: "J.R.R. Tolkien", genero: "Fantasía", prestado: false, tematica: "Literatura" },
     { titulo: "To Kill a Mockingbird", autor: "Harper Lee", genero: "Ficción", prestado: false, tematica: "Literatura" },
-    { titulo: "Clean Code", autor: "Fernando Meza", genero: "Programación", prestado: true, tematica: "Informática" }
+    { titulo: "Clean Code", autor: "Fernando Meza", genero: "No Ficción", prestado: true, tematica: ", Informatica, " },
 
 ];
+
 
 function searchBooks() {
     const searchInput = document.getElementById("searchInput").value.toLowerCase();
@@ -16,10 +15,12 @@ function searchBooks() {
 
     const matchingBooks = libros.filter(libro =>
         libro.titulo.toLowerCase().includes(searchInput) ||
-        libro.autor.toLowerCase().includes(searchInput)  ||
+        libro.autor.toLowerCase().includes(searchInput) ||
         libro.tematica.toLowerCase().includes(searchInput) ||
         libro.genero.toLowerCase().includes(searchInput)
     );
+
+
 
     if (matchingBooks.length === 0) {
         resultsDiv.innerHTML = "<p>No se encontraron resultados.</p>";

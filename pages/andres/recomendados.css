@@ -79,7 +79,7 @@ body {
 
 .contenedor .widget-3 {
 	grid-area: widget-3;
-}
+	}
 
 .contenedor .widget-4 {
 	grid-area: widget-4;
@@ -131,9 +131,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 0.2rem;
-	font-size: 1.8vw;
+	font-size: 2vw;
 }
 
+h3{
+	font-size: 1.3vw;
+}
 .comprasmes {
 	background-image: url(img/aprendizajebasadoenproyectos.jpg);
 	background-repeat: no-repeat;
@@ -177,7 +180,7 @@ body {
 
 .widget-container {
 	color: #fff;
-	text-align: center;
+	text-align: left;
 	background: #55a8fd;
 	border: 1px solid #110101;
 	padding: 30px;
