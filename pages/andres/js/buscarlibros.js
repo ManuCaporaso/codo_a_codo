@@ -22,9 +22,7 @@ const libros = [
     { titulo: "Métodos de enseñanza. : didáctica general para maestros y profesores.", autor: "Davini, María Cristina.", genero: "No Ficción", prestado: false, tematica: "Educación" },
     { titulo: "El oficio de enseñar. : condiciones y contextos.", autor: "Litwin, Edith.", genero: "No Ficción", prestado: true, tematica: "Educación" },
 
-
 ];
-
 
 function searchBooks() {
     const searchInput = document.getElementById("searchInput").value.toLowerCase();

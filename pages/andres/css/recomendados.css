@@ -117,9 +117,6 @@ body {
 			"footer footer footer";
 	}
 
-	.comprasmes {
-		background-position: center;
-	}
 }
 
 .contenido section {
@@ -142,7 +139,7 @@ body {
 	font-size: 1.3vw;	
 }
 .text {
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	gap: 0.2rem;
 	font-size: 2vw;
@@ -152,10 +149,11 @@ h3{
 	font-size: 1.3vw;
 }
 .comprasmes {
+	background-position: center;
 	background-image: url(../img/aprendizajebasadoenproyectos.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
-	height: 80vh;
+	height: 30vw;
 	position: relative;
 	margin-bottom: 1vh;
 
@@ -202,8 +200,15 @@ h3{
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	max-width: 633px;
 	margin: 10 auto;
+	display: inline-block;
+	min-width: 100px;
 }
 
 h1 {
 	color: #333
 }
+#searchInput {
+	width: 50%;
+}
+
+
