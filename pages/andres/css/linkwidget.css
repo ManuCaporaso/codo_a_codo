@@ -1,0 +1,8 @@
+.accesosdirectos {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: brown;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out 0s;
+}

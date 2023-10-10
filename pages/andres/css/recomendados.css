@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+:root{
+	--color: #55a8fd;
+}
+
 body {
 	background: #E9ECF4;
 	color: #000;
@@ -32,7 +36,7 @@ body {
 .contenedor .contenido,
 .contenedor .sidebar,
 .contenedor .footer {
-	background: #55a8fd;
+	background: var(--color);
 	padding: 20px;
 	border-radius: 3px;
 	border: 2px solid #160101;
@@ -51,7 +55,7 @@ body {
 
 .contenedor .sidebar {
 	grid-column: 3 / 4;
-	background: #55a8fd;
+	background: var(--color);
 	text-align: center;
 	align-items: center;
 	justify-content: center;
@@ -60,18 +64,23 @@ body {
 }
 
 .contenedor .widgets {
-	background: #55a8fd;
+	background: var(--color);
 	color: #fff;
 	height: 20px;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 0.3s;
+	font-size: 1.5vw;
+}
+.widgets:hover {
+	background-color: #a5cdf5;
 }
 
 .contenedor .widget-1 {
 	grid-area: widget-1;
-}
+	}
 
 .contenedor .widget-2 {
 	grid-area: widget-2;
@@ -79,7 +88,7 @@ body {
 
 .contenedor .widget-3 {
 	grid-area: widget-3;
-	}
+		}
 
 .contenedor .widget-4 {
 	grid-area: widget-4;
@@ -126,7 +135,12 @@ body {
 	background-size: contain;
 
 }
-
+.formulario {
+	/* display: flex;
+	flex-direction: column;
+	gap: 0.2rem; */
+	font-size: 1.3vw;	
+}
 .text {
 	display: flex;
 	flex-direction: column;
@@ -138,7 +152,7 @@ h3{
 	font-size: 1.3vw;
 }
 .comprasmes {
-	background-image: url(img/aprendizajebasadoenproyectos.jpg);
+	background-image: url(../img/aprendizajebasadoenproyectos.jpg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 80vh;
@@ -153,25 +167,25 @@ h3{
 
 @keyframes cambiartapa {
 	0% {
-		background-image: url(img/aprendizajebasadoenproyectos.jpg);
+		background-image: url(../img/aprendizajebasadoenproyectos.jpg);
 		left: 0vw;
 		top: 0vh;
 	}
 
 	25% {
-		background-image: url(img/LALENGUADESE_AS.jpg);
+		background-image: url(../img/LALENGUADESE_AS.jpg);
 		left: 0vw;
 		top: 0vh;
 	}
 
 	50% {
-		background-image: url(img/lelekaike.jpg);
+		background-image: url(../img/lelekaike.jpg);
 		left: 0vw;
 		top: 0vh;
 	}
 
 	100% {
-		background-image: url(img/MI_AMIGO_VAN_GOGH_B.jpg);
+		background-image: url(../img/MI_AMIGO_VAN_GOGH_B.jpg);
 		left: 0vw;
 		top: 0vh;
 	}
