@@ -116,7 +116,12 @@ body {
 			"widget-container widget-container"
 			"footer footer footer";
 	}
-
+	.contenido section {
+		flex-direction: column;
+	}
+	.destacadomes {
+		height: 30%;
+	}
 }
 
 .contenido section {
