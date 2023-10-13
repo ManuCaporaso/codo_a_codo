@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'noto light';
+    src: url('../fonts/Noto_Sans/NotoSans-Light.ttf');
+    font-family: 'noto bold';
+    src: url('../fonts/Noto_Sans/NotoSans-Bold.ttf');
+
+}
+*{
+    background-color: rgb(229, 229, 229);
+
+}
+header{
+    margin-bottom: 15%;
+    font-family: 'noto bold';
+    text-align: center
+
+}
+.title {
+    text-align: center;
+    font-size: 60;
+    font-family: 'noto bold';
+
+}
+fieldset{
+    background-color: navy;
+    text-align: center;
+    width: 30vw;
+    height: auto;
+    float:none;
+    border-radius: 10%;
+    border-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+input{
+    background-color: navy;
+}
+label {
+    text-align: left;
+    background-color: white;
+}
+.registro{
+    text-align: center;
+}
