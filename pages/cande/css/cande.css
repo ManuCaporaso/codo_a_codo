@@ -3,7 +3,6 @@
     /* background-color: rgba(239, 239, 206,1); */
     margin: 0%;
     padding: 0%;
-
 }
 
 /* Fuentes  */
@@ -12,8 +11,8 @@
     src: url('../fonts/Noto_Sans/NotoSans-Light.ttf');
     font-family: 'noto bold';
     src: url('../fonts/Noto_Sans/NotoSans-Bold.ttf');
-
 }
+
 
 /* Color Theme Swatches in RGBA */
 .Mini-Biblioteca-1-rgba { color: rgba(35, 125, 130, 1); }
@@ -31,9 +30,9 @@
 
 /* Estilo encabezado */
 header{
-    background-color: rgba(239, 100, 140, 1);
+    background-color: rgba(202, 121, 104, 1);
     display: inline-block;
-    height: 15vh;
+    height: 13vh;
     width: 100vw;
     font-size: 1.5vw;
     text-align: center;
@@ -42,62 +41,83 @@ header{
 }
 .barra{
     font-family: "noto light";
+    font-size: 2.5vh;
     text-decoration: none;
-    color:rgba(239, 239, 206, 1);
+    color:rgba(187, 221, 215, 1);
     padding-left: 0.75vw;
     padding-right: 0.75vw;
 }
 
 body{
-    background-color: rgba(239, 239, 206, 1);
+    background-color: rgba(236, 161, 124, 1);
 }
 /* Estilo de "iniciar sesion" y "registrarse" */
 .title { 
     text-align: center;
-    font-size: 70; /*no puedo cambiar el tamaño y no se por que*/
+    font-size: 3vh; /*no puedo cambiar el tamaño y no se por que*/
     font-family: 'noto bold';
     margin-top: 3vh;
     margin-bottom: 2vh;
-    color: rgba(239, 239, 206, 1);
+    color: rgba(187, 221, 215, 1);
 
 }
 
 /* Estilo contenedor del formulario */
 fieldset{
-    background-color: rgba(48, 48, 48, 1);
-    text-align: center;
+    background-color: rgba(97, 115, 137, 1);
     width: 22vw;
-    height: 50vh;
-    /* float:none; */
+    height: 44vh;
     border-radius: 15%;
-    border-color: grey;
+    border-style: inset;
+    box-shadow: 3vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15vh;
-    flex-shrink: 0;
-    
 
 
 }
 input{
-    background-color: rgba(239, 239, 206, 1);
+    background-color: rgba(187, 221, 215, 1);
     border-radius: 35%;
     height: 5vh;
+    margin: 0.5vh 1vw 0vw 1vw;
+    border-style: none;
+    padding: 1.5vh;
 }
-label {
-    text-align: left;
-    color:rgba(239, 239, 206, 1);
+
+label{
+    font-family: "noto bold";
+    color:rgba(187, 221, 215, 1);
     margin-top: 5vh;
+    text-align: left;
+    margin-left: 2vw;
 }
 .registro{
-    text-align: center;
+    text-align: center; 
     margin-bottom: 20vh;
+    font-family: "noto bold";
+    font-size: medium;
+    color: rgba(97, 115, 137, 1);
+    }
+
+.boton {
+    text-align: center;
+    animation: cambiarColor;
+    animation-duration: 0.75s;
+    animation-delay:0.25s; 
+    animation-iteration-count: infinite;
+    
+
+}
+@keyframes cambiarColor {
+    from {background-color: rgba(187, 221, 215, 1);}
+    to {background-color: rgba(187, 221, 215, 0.371);}
 }
 
 
 footer{
-    background-color: rgba(35, 125, 130, 1);
-    max-height: 30vh;
+    background-color: rgba(187, 221, 215, 1);
+    max-height: 50vh;
     text-align: center;
 
 }
