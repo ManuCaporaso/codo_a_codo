@@ -4,12 +4,12 @@
 }
 
 :root{
-	--color: #55a8fd;
+	--color: #d69620;
 }
 
 body {
-	background: #E9ECF4;
-	color: #000;
+	background:rgba(239, 240, 206);
+	color: #faf6f6;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5 vw;
 }
@@ -17,9 +17,9 @@ body {
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
-	margin: 10px auto;
+	margin: 1px auto;
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 4px;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(5, auto);
 
@@ -37,13 +37,13 @@ body {
 .contenedor .sidebar,
 .contenedor .footer {
 	background: var(--color);
-	padding: 20px;
-	border-radius: 3px;
-	border: 2px solid #160101;
+	padding: 30px;
+	border-radius: 9px;
+	border: 4px solid #160101;
 }
 
 .contenedor .header {
-	background: #12203E;
+	background:rga(240 101 140);
 	color: #fff;
 	grid-area: header;
 }
@@ -73,14 +73,16 @@ body {
 	justify-content: center;
 	transition: 0.3s;
 	font-size: 1.5vw;
+	border-radius: 25% 25% 25% 25%;
 }
 .widgets:hover {
-	background-color: #a5cdf5;
+	background-color: #c9db7a;
+	
 }
 
 .contenedor .widget-1 {
 	grid-area: widget-1;
-	}
+		}
 
 .contenedor .widget-2 {
 	grid-area: widget-2;
@@ -95,8 +97,8 @@ body {
 }
 
 .contenedor .footer {
-	background: #12203E;
-	color: #fff;
+	background: rgba(35 125 130);
+	color: rgba(48 48 48);
 	grid-area: footer;
 }
 
