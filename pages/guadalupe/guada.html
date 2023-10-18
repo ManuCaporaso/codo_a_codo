@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hola</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="guada.css">
+  <title>Formulario</title>
+  <script>
+
+
+  </script>
+
+
 </head>
+
 <body>
-  <h1>hola mundooooooooooooo</h1>
+
+  <header>
+    <nav>
+      <a href="../home_pages.html"></a>
+    </nav>
+
+  </header>
+
+
+  <main>
+    <form action="https://formspree.io/f/xleybejy" method="post" class="form">
+      <h1 class="form-titulo">Formulario</h1>
+
+      <section class="form-contenido">
+
+
+        <div class="form-grupo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" maxlength="10" class="field">
+          <span class="form-linea"></span>
+        </div>
+
+        <br>
+
+        <div class="form-grupo">
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" class="field">
+          <span class="form-linea"></span>
+        </div>
+
+        <br>
+
+        <div class="form-grupo">
+          <label for="fn">Fecha de nacimiento:</label>
+          <input type="date" name="fn" id="fn" class="field">
+          <span class="form-linea"></span>
+        </div>
+
+        <br>
+
+        <div class="form-grupo">
+
+          <label for="genero">Seleccione un género:</label>
+          <select name="genero" id="genero">
+            <option value="M">M</option>
+            <option value="F">F</option>
+            <option value="Otro">Otro</option>
+          </select>
+
+        </div>
+        <br>
+        <div class="form-grupo">
+          <label for="edad">Edad:</label>
+          <input type="number" name="edad" id="edad" min="12" class="field">
+          <span class="form-linea"></span>
+        </div>
+        <br>
+
+        <div>
+          <!-- aca agregar profesion alumno, profe, otro-->
+          <h3>Seleccione genero de libro de su interes:</h3>
+
+          <input type="radio" name="ficcion" id="ficcion" value="ficcion">
+          <label for="ficcion">Ficción</label>
+
+          <input type="radio" name="poesía" id="poesía" value="poesía">
+          <label for="poesía">Poesía</label>
+
+          <input type="radio" name="drama" id="drama" value="drama">
+          <label for="drama">Drama</label>
+
+          <input type="radio" name="novela" id="novela" value="novela">
+          <label for="novela">Novela</label>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div>
+          <!-- aca agregar generos literarios-->
+          <label for="navegador">Seleccione navegador:</label>
+          <input list="browsers" id="navegador" name="navegador">
+
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Firefox"></option>
+            <option value="Edge"></option>
+            <option value="Safari"></option>
+
+          </datalist>
+        </div>
+
+        <br>
+
+        <!-- Agregar área para datos personales 
+            con fieldset: teléfono, correo. -->
+        <fieldset>
+          <legend>Datos personales:</legend>
+
+          <div class="form-grupo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" class="field">
+            <span class="form-linea"></span>
+          </div>
+
+          <br>
+
+          <div class="form-grupo">
+            <label for="email">Correo:</label>
+            <input type="email" name="email" id="email" class="field">
+            <span class="form-linea"></span>
+          </div>
+
+
+        </fieldset>
+
+        <br>
+
+        <div class="form-grupo">
+          <label for="comentario"> Comentario: </label>
+          <textarea name="comentario" id="comentario" cols="30" rows="2" maxlength="30"
+            placeholder="Escriba un comentario"></textarea>
+        </div>
+
+        <hr>
+        <hr>
+
+        <div>
+          <!-- Agregar los botones para enviar(submit) y borrar(reset). -->
+          <input type="submit" class="form-submit" value="Enviar">
+          <input type="reset" class="form-submit" value="Borrar todo">
+
+        </div>
+        <br>
+    </form>
+
+    </section>
+
+  </main>
+  <script src="guada.js"></script>
+
+  <footer class="pie">
+    <h3 class="texto-pie">Contactos</h3>
+    <br>
+    <a href="https://www.facebook.com/bibliotecapedagogica3" target="_blank" class="fa-brands fa-facebook-f"
+      style="font-size: 3vw;"></a>
+    <a href="https://www.instagram.com/bibliotecap3/?hl=es-la" target="_blank" class="fa-brands fa-instagram"
+      style="font-size: 3vw;"></a>
+    <a href="https://wa.me/2945646722 " target="_blank" rel="noopener noreferrer" class="fa-brands fa-whatsapp"
+      style="font-size: 3vw;"></a>
+    <!--(no se vincular un link de email) <a href="bibliotecap3@yahoo.com.ar" target="_blank" rel="noopener noreferrer" class="fa-regular fa-envelope" style="font-size: 3vw;"></a>-->
+    <a href="https://bibliotecapedagogica3.blogspot.com/" target="_blank" rel="noopener noreferrer"
+      class="fa-solid fa-blog" style="font-size: 3vw;"></a>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/d6afe3a070.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>

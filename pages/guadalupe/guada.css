@@ -1,3 +1,93 @@
-h1{
-    color: rgb(230, 14, 14);
+* {
+    margin: 0%;
+    /*Elimina todo margen que trae por defecto*/
+    padding: 0%;
+    /*Elimina todo relleno que trae por defecto*/
+    box-sizing: border-box;
+}
+main{
+    background-color: #e5e5f7;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(to right, #ffd48a, #ffd48a 1px, #e5e5f7 1px, #e5e5f7);
+    background-position: 0 0, 10px 10px;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/*body {
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#f7b945 0.5px, transparent 0.5px), radial-gradient(#f7b945 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    display: flex;
+    min-height: 100vh;
+}*/
+
+.form {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: #000000;
+    padding: 4.5em 3em;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30%);
+    text-align: center;
+    
+}
+
+.form-titulo {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+.form-contenido {
+    margin-top: 3em;
+    display: grid;
+    gap: 0.5em;
+}
+
+.form-grupo {
+    position: relative;
+    --color: #5757577e;
+}
+
+.field {
+    width: 100%;
+    background: none;
+    color:black;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.field:focus{
+    border-color:#f7b945;
+
+}
+.form-submit{
+    background:#f7b945 ;
+    color: #000000;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.pie{
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 15vh; /*Altura*/
+    text-align: center; /*Alinear texto*/
+    color: rgb(7, 7, 7); /*Color del texto*/
+    margin-left: 10px;
+}
+.texto-pie{
+    padding-top: 8vh; /*Agrega separación del borde del pie de página al texto*/
+    font-size: 2vw; /*Tamaño de fuente*/
 }
