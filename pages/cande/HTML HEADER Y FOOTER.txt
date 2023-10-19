@@ -1,0 +1,82 @@
+    <section class="principal">
+        <div class="logo">
+            <img src="./asets/logo2.PNG" alt="Logo de la tienda">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ingrese un título, autor, ISBN, palabra clave o categoria">
+            <button>BUSCAR</button>
+        </div>
+        <div class="actions">
+            <a href="#">Lista de Deseos</a>
+            <a href="#">Carrito de Compras</a>
+        </div>
+        <div class="user">
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Registro</a>
+        </div>
+    </section>
+
+    <header>
+        <nav>
+            <div class="enlaces">
+                <button class="animated-button" onclick="window.location.href = ''">INICIO</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">CATALOGO</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">NOVEDADES</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">DESTACADOS</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">OFERTAS</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">CONTACTO</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">MI CUENTA</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./asets/logo2.PNG" alt="Logo de la tienda">
+                </div>
+                <div class="footer-info">
+                    <p><strong>23528 BOOKS </strong></p>
+                    <p><em>Tu destino para explorar nuevos mundos</em></p>
+                    <p>Dirección: 123 Calle de los Libros</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><img src="./asets/redes-sociales/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./asets/redes-sociales/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="./asets/redes-sociales/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
