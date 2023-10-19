@@ -107,6 +107,7 @@ nav {
 
 
 /*BODY*/
+
 body{
     background-image: url('../img/fondo_libreria.jpg');
     background-size: cover;
@@ -125,36 +126,38 @@ body{
 
 }
 
-/*Estilo contenedor del formulario de Inicio de sesion*/
+/*Estilo contenedor del formulario de Inicio de sesion y registro*/
 fieldset{
     display: grid;
-    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(241, 146, 22, 0.834);
     border-radius: 30px;
     border-style: hidden;
     box-shadow: 3vw;
-    margin-left: auto;
-    margin-right: auto;
     margin: 15vh auto 15vh auto ;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
 
 }
+
+/*Caracteristicas especificas del tamaño del contenedor de la pantalla de Incio de Sesion*/
 .inicio-sesion{
     
-    width: 30vw;
+    width: 25vw;
     min-height: 60vh;
 
 }
 
-/*Estilo contenedor del formulario de registro*/
+/*Caracteristicas especificas del tamaño del contenedor de la pantalla de registro*/
 .fieldset-registro{
 
     width: 30vw;
     min-height: 75vh;
 }
 
-
+/*Caractetisticas comunes para el boton de "Iniciar sesion" y "registrarse"*/
 .boton-sesion,.boton-registro{
     font-family: "Ubuntu", sans-serif;
     text-align: center;
@@ -173,18 +176,21 @@ fieldset{
 }
 
 
-
+/*Animacion de los botones del formulario*/
 .boton-sesion:hover, .boton-registro:hover{
     background-color:  rgba(241, 146, 22, 0.834);
 }
 
-.registro{
+/*Caracteristica del texto "No tenes cuenta"*/
+.noRegistro{
     text-align: center; 
     margin-top: 5vh;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
     }
+
+/*Caracteristicas del boton de "Registrate"*/
 .botonNoCuenta{
     background-color: inherit;
     border-style: hidden;
@@ -197,6 +203,7 @@ fieldset{
     color: rgba(48, 48, 48, 1);
 }
 
+/*Estilos de los imput de inicio de sesion y registro y de sus respectivos label*/
 input{
     text-align: center;
     background-color: rgb(236, 236, 236);
