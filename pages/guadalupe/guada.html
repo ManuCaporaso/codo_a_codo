@@ -15,17 +15,59 @@
 </head>
 
 <body>
+  <section class="principal">
+    <div class="logo">
+      <img src="./asets/logo2.PNG" alt="Logo de la tienda">
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Ingrese un título, autor, ISBN, palabra clave o categoria">
+      <button>BUSCAR</button>
+    </div>
+    <div class="actions">
+      <a href="#">Lista de Deseos</a>
+      <a href="#">Carrito de Compras</a>
+    </div>
+    <div class="user">
+      <a href="#">Iniciar sesión</a>
+      <a href="#">Registro</a>
+    </div>
+  </section>
 
   <header>
     <nav>
-      <a href="../home_pages.html"></a>
+      <div class="enlaces">
+        <button class="animated-button" onclick="window.location.href = ''">INICIO</a>
+        </button>
+        <button class="animated-button" onclick="window.location.href = ''">CATALOGO</a>
+        </button>
+        <button class="animated-button" onclick="window.location.href = ''">NOVEDADES</a>
+        </button>
+        </button>
+        <button class="animated-button" onclick="window.location.href = ''">DESTACADOS</a>
+        </button>
+        </button>
+        <button class="animated-button" onclick="window.location.href = ''">OFERTAS</a>
+        </button>
+        </button>
+        <button class="animated-button" onclick="window.location.href = ''">CONTACTO</a>
+        </button>
+        </button>
+        <button class="animated-button" onclick="window.location.href = ''">MI CUENTA</a>
+        </button>
+      </div>
     </nav>
-
   </header>
 
 
+
+  <div>
+    <a href="../home_pages.html"></a>
+  </div>
+
+
+
   <main>
-    <form action="https://formspree.io/f/xleybejy" method="post" class="form">
+    <form class="form">
       <h1 class="form-titulo">Formulario</h1>
 
       <section class="form-contenido">
@@ -74,20 +116,17 @@
         <br>
 
         <div>
-          <!-- aca agregar profesion alumno, profe, otro-->
-          <h3>Seleccione genero de libro de su interes:</h3>
 
-          <input type="radio" name="ficcion" id="ficcion" value="ficcion">
-          <label for="ficcion">Ficción</label>
+          <h3>Seleccione su profesion:</h3>
 
-          <input type="radio" name="poesía" id="poesía" value="poesía">
-          <label for="poesía">Poesía</label>
+          <input type="radio" name="profesor" id="profesor" value="profesor">
+          <label for="profesor">Profesor</label>
 
-          <input type="radio" name="drama" id="drama" value="drama">
-          <label for="drama">Drama</label>
+          <input type="radio" name="Alumno/a" id="Alumno/a" value="Alumno/a">
+          <label for="Alumno/a">Alumno/a</label>
 
-          <input type="radio" name="novela" id="novela" value="novela">
-          <label for="novela">Novela</label>
+          <input type="radio" name="Otro" id="Otro" value="Otro">
+          <label for="Otro">Otro</label>
 
         </div>
 
@@ -95,24 +134,26 @@
         <hr>
 
         <div>
-          <!-- aca agregar generos literarios-->
-          <label for="navegador">Seleccione navegador:</label>
+
+          <label for="navegador">Seleccione genero de libro de su interes:</label>
           <input list="browsers" id="navegador" name="navegador">
 
           <datalist id="browsers">
-            <option value="Chrome"></option>
-            <option value="Opera"></option>
-            <option value="Firefox"></option>
-            <option value="Edge"></option>
-            <option value="Safari"></option>
-
+            <option value="Ficción"></option>
+            <option value="Poesía"></option>
+            <option value="Drama"></option>
+            <option value="Novela"></option>
+            <option value="Aventuras"></option>
+            <option value="Terror y misterio"></option>
+            <option value="Romántica"></option>
+            <option value="Humor"></option>
+            <option value="Mitología"></option>
           </datalist>
         </div>
 
         <br>
 
-        <!-- Agregar área para datos personales 
-            con fieldset: teléfono, correo. -->
+
         <fieldset>
           <legend>Datos personales:</legend>
 
@@ -145,7 +186,7 @@
         <hr>
 
         <div>
-          <!-- Agregar los botones para enviar(submit) y borrar(reset). -->
+
           <input type="submit" class="form-submit" value="Enviar">
           <input type="reset" class="form-submit" value="Borrar todo">
 
@@ -157,22 +198,40 @@
 
   </main>
   <script src="guada.js"></script>
+  <div class="container-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="./asets/logo2.PNG" alt="Logo de la tienda">
+      </div>
+      <div class="footer-info">
+        <p><strong>23528 BOOKS </strong></p>
+        <p><em>Tu destino para explorar nuevos mundos</em></p>
+        <p>Dirección: 123 Calle de los Libros</p>
+        <p>Teléfono: (123) 456-7890</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/bibliotecapedagogica3" target="_blank"><i
+            class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/bibliotecap3/?hl=es-la" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+        <!--<a href="https://wa.me/2945646722 " target="_blank" rel="noopener noreferrer"></a><i
+          class="fa-brands fa-whatsapp"></i></a>-->
 
-  <footer class="pie">
-    <h3 class="texto-pie">Contactos</h3>
-    <br>
-    <a href="https://www.facebook.com/bibliotecapedagogica3" target="_blank" class="fa-brands fa-facebook-f"
-      style="font-size: 3vw;"></a>
-    <a href="https://www.instagram.com/bibliotecap3/?hl=es-la" target="_blank" class="fa-brands fa-instagram"
-      style="font-size: 3vw;"></a>
-    <a href="https://wa.me/2945646722 " target="_blank" rel="noopener noreferrer" class="fa-brands fa-whatsapp"
-      style="font-size: 3vw;"></a>
-    <!--(no se vincular un link de email) <a href="bibliotecap3@yahoo.com.ar" target="_blank" rel="noopener noreferrer" class="fa-regular fa-envelope" style="font-size: 3vw;"></a>-->
-    <a href="https://bibliotecapedagogica3.blogspot.com/" target="_blank" rel="noopener noreferrer"
-      class="fa-solid fa-blog" style="font-size: 3vw;"></a>
-  </footer>
+      </div>
+      <hr>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+    </div>
+    </footer>
 
-  <script src="https://kit.fontawesome.com/d6afe3a070.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"></script>
+
 
 </body>
 
