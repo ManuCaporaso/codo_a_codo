@@ -33,23 +33,17 @@
     <header>
         <nav>
             <div class="enlaces">
-                <button class="animated-button" onclick="window.location.href = ''">INICIO</a>
+                <button class="animated-button" onclick="window.location.href = './home.html'">INICIO</a>
                 </button>
                 <button class="animated-button" onclick="window.location.href = ''">CATALOGO</a>
                 </button>
-                <button class="animated-button" onclick="window.location.href = ''">NOVEDADES</a>
+                <button class="animated-button" onclick="window.location.href = '#carousel-container'">NOVEDADES</a>
                 </button>
+                <button class="animated-button" onclick="window.location.href = '#container-carrousel'">DESTACADOS</a>
                 </button>
-                <button class="animated-button" onclick="window.location.href = ''">DESTACADOS</a>
+                <button class="animated-button" onclick="window.location.href = '../contacto/index.html'">CONTACTO</a>
                 </button>
-                </button>
-                <button class="animated-button" onclick="window.location.href = ''">OFERTAS</a>
-                </button>
-                </button>
-                <button class="animated-button" onclick="window.location.href = ''">CONTACTO</a>
-                </button>
-                </button>
-                <button class="animated-button" onclick="window.location.href = ''">MI CUENTA</a>
+                <button class="animated-button" onclick="window.location.href = '../pages/manu/index.html'">MI CUENTA</a>
                 </button>
             </div>
         </nav>
@@ -125,8 +119,8 @@
 
     <hr>
 
-    <div class="container-carrousel">
-        <h2>ESPECIAL MES DE LA MADRE</h2>
+    <div id="container-carrousel">
+        <h2>DESTACADOS- "ESPECIAL MES DE LA MADRE"</h2>
         <div class="carousel">
             <div class="book">
                 <img src="./asets/libros/mes-madre/1.jpg" alt="Libro 1">
@@ -256,6 +250,33 @@
     </div>
 
     <hr>
+    <div id="carousel-container">
+        <div class="slide fade">
+            <img src="./asets/destacados/1.jpg" alt="Imagen 1">
+        </div>
+        <div class="slide fade">
+            <img src="./asets/destacados/2.jpg" alt="Imagen 2">
+        </div>
+        <div class="slide fade">
+            <img src="./asets/destacados/3.png" alt="Imagen 3">
+        </div>
+        <div class="slide fade">
+            <img src="./asets/destacados/4.jpg" alt="Imagen 4">
+        </div>
+        <div class="slide fade">
+            <img src="./asets/destacados//5.jpg" alt="Imagen 5">
+        </div>
+        <div class="slide fade">
+            <img src="./asets/destacados/6.jpg" alt="Imagen 6">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
     </main>
 

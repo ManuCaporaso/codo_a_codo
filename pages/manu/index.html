@@ -3,13 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MI CUENTA</title>
+    <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./asets/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <h1>HOLA MUNDO</h1>
+    <section class="principal">
+        <div class="logo">
+            <img src="../../home/asets/logo2.PNG" alt="Logo de la tienda">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ingrese un título, autor, ISBN, palabra clave o categoria">
+            <button>BUSCAR</button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="actions">
+            <a href="#">Lista de Deseos</a>
+            <i class="fa-solid fa-heart"></i>
 
+        </div>
+        <div class="user-profile">
+            <img src="./asets/perfil.jpg" alt="Foto de perfil">
+            <h1>Usuario Uno</h1>
+        </div>
+    </section>
 
+    <header>
+        <nav>
+            <div class="enlaces">
+                <button class="animated-button" onclick="window.location.href = '../../home/home.html'">INICIO</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">CATALOGO</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = '../../contacto/index.html'">CONTACTO</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="account-details">
+            <h2>Mi Perfil</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="Nombre de Usuario">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" value="correo@ejemplo.com">
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" name="direccion">Dirección de envío</textarea>
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </section>
+        <section class="order-history">
+            <h2>Historial de Compras</h2>
+            <table>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>01/09/2023</td>
+                    <td>LA CASA NEVILLE</td>
+                    <td>$10.99</td>
+                </tr>
+                <tr>
+                    <td>30/08/2023</td>
+                    <td>LA SANGRE MANDA</td>
+                    <td>$10.99</td>
+                </tr>
+            </table>
+        </section>
+
+<hr>
+
+    </main>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../../home/asets/logo2.PNG" alt="Logo de la tienda">
+                </div>
+                <div class="footer-info">
+                    <p><strong>23528 BOOKS </strong></p>
+                    <p><em>Tu destino para explorar nuevos mundos</em></p>
+                    <p>Dirección: 123 Calle de los Libros</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

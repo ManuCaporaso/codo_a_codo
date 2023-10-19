@@ -7,7 +7,7 @@
 }
 
 body{
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./asets/fondo_libreria.jpg');
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../home/asets/fondo_libreria.jpg');
  background-size: cover;
  background-repeat: no-repeat;
  background-attachment: fixed;
@@ -73,7 +73,7 @@ body{
    background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
    color: #fff; /* Texto en color blanco */
    text-align: center; /* Centrar el contenido del encabezado */
-   padding: 10px 0; /* Espacio interno en la parte superior e inferior */
+   padding: 20px 0; /* Espacio interno en la parte superior e inferior */
 }
 
 /* Estilo para la barra de navegación */
@@ -113,119 +113,54 @@ nav {
  }
 
 
- /*CARROUSEL DE LIBROS*/
- 
- .container-carrousel , #container-carrousel {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-}
 
-h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color:#fff;
-    text-shadow: 10px 10px 5px black;
-}
 
-.carousel {
+
+
+/*INFORMACION DE CONTACTO*/
+
+ .contact-info {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    justify-content: space-around;
+    margin: 30px;
 }
 
-.book {
-    flex: 0 0 auto;
-    width: 300px;
+.contact-details, .location-map {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-details {
+    background-color: #f2f2f2;
     padding: 20px;
-    margin-right: 20px;
-    background-color: #e8e8e8da;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    scroll-snap-align: start;
+    font-size: 40px;
 }
 
-.book img {
-    max-width: 100%;
-    width: 200px;
-    border: 1px solid #da0000;
-    border-radius: 4px;
-}
-
-.book h3 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.book p {
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-/* Estilos para el carrusel Destacados */
-
-#carousel-container {
-    position: relative;
-    max-width: 1200px;
+.contact-form {
+    max-width: 800px;
     margin: 0 auto;
-    margin-top: 100px;
-    overflow: hidden;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 200px;
+    font-size: 20px;
 }
 
-.slide {
-    display: none;
-}
-
-img {
-    width: 1200px;
-    height: auto;
-}
-
-.caption {
+label, input, textarea {
+    display: block;
+    margin: 10px 0;
+    width: 80%;
     text-align: center;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+button {
+    background-color: #333;
     color: #fff;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
+    padding: 10px;
+    border: none;
     cursor: pointer;
 }
 
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.dots-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.dot {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #bbb;
-    border-radius: 50%;
-    margin: 0 2px;
-    cursor: pointer;
-}
-
-.active {
-    background-color: #717171;
-}
 
 
 
@@ -236,7 +171,8 @@ img {
 
 
 
-/*FOOTER*/
+
+ /*FOOTER*/
 
  .container-footer {
     max-width: 1200px;
@@ -308,3 +244,4 @@ img {
 hr {
     border: 1px solid #f1f1f1;
 }
+

@@ -1,3 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+/* Estilos generales */
+* {
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+ }
+
 body {
-    background-color: brown;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../home/asets/fondo_libreria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*BUSQUEDA DE TITULOS*/
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search button {
+    background-color: #ff9100d0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search i {
+    font-size: 20px;
+    margin: 0 15px;
+    color: #fff;
+    align-self: center;
+}
+
+.user a,
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.actions i{
+    color: #da0000;
+    margin-right: 10px;
+}
+
+/*HEADER*/
+
+ /* Estilo para el encabezado y la barra de navegación */
+ header {
+   background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
+   color: #fff; /* Texto en color blanco */
+   text-align: center; /* Centrar el contenido del encabezado */
+   padding: 10px 0; /* Espacio interno en la parte superior e inferior */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+   display: flex; /* Mostrar elementos en una línea */
+   justify-content: center; /* Distribuir los elementos de izquierda a derecha */
+   align-items: center; /* Centrar verticalmente los elementos */
+   max-width: auto; /* Ancho máximo de la barra de navegación */
+   margin: 0 auto; /* Centrar la barra de navegación en la página */
+   padding: 0 20px; /* Espacio interno en los lados izquierdo y derecho */
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile h1 {
+    font-size: 40px;
+    color:#fff ;
+}
+
+
+/*estilos de los botones del nav */
+
+.animated-button {
+   position: relative;
+   display: inline-block;
+   margin: 5px;
+   padding: 12px 15px;
+   border: none;
+   text-shadow: 5px 5px 5px black;
+   font-size: 20px;
+   background-color: inherit;
+   border-radius: 15px;
+   font-weight: 600;
+   color: rgb(253, 253, 253);
+   box-shadow: 0 0 0 2px rgb(255, 238, 0);
+   cursor: pointer;
+   overflow: hidden;
+   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+ }
+ 
+ .animated-button:hover {
+   box-shadow: 0 0 0 10px #fffb0060;
+   color: #ff0000;
+ }
+
+
+
+/* Estilos para la sección de perfil */
+.account-details {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.account-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.account-details form {
+    max-width: 400px;
+}
+
+.account-details label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.account-details input, .account-details textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.account-details button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.account-details button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el historial de compras */
+.order-history {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+}
+
+.order-history h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    width: 1200px;
+    height: auto;
+}
+
+.caption {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+
+
+/*FOOTER*/
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-info, .footer-social {
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-social i{
+    font-size: 50px;
+    margin: 0 18px;
+    align-self: center;
+    color: #ff9100d0;
+}
+
+.footer-social i{
+    width: 50px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-right: 95px;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
 }
