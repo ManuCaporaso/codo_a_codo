@@ -1,35 +1,30 @@
-/* Estilo comun a toda la pagina */
-*{
-    /* background-color: rgba(239, 239, 206,1); */
-    margin: 0%;
-    padding: 0%;
-    
-}
-
 /* Fuentes  */
-@font-face {
-    font-family: "ubuntu";
-    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
-}
-
-
-/* Color Theme Swatches in RGBA */
-.Mini-Biblioteca-1-rgba { color: rgba(35, 125, 130, 1); }
-.Mini-Biblioteca-2-rgba { color: rgba(48, 48, 48, 1); }
-.Mini-Biblioteca-3-rgba { color: rgba(239, 100, 140, 1); }
-.Mini-Biblioteca-4-rgba { color: rgba(145, 106, 59, 1); }
-.Mini-Biblioteca-5-rgba { color: rgba(239, 239, 206, 1); }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 /*Color theme naranja*/
 .Mini-Biblioteca-6-rgba { color: rgba(97, 115, 137, 1); }
 .Mini-Biblioteca-7-rgba { color: rgba(187, 221, 215, 1); }
 .Mini-Biblioteca-8-rgba { color: rgba(236, 161, 124, 1); }
 .Mini-Biblioteca-9-rgba { color: rgba(202, 121, 104, 1); }
+
+
+
+
+/* Estilo comun a toda la pagina */
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+
 .principal {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 20px;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .logo img {
@@ -110,6 +105,8 @@ nav {
     color: #ff0000;
 }
 
+
+/*BODY*/
 body{
     background-image: url('../img/fondo_libreria.jpg');
     background-size: cover;
@@ -117,70 +114,106 @@ body{
     background-attachment: fixed;
 }
 
-/*Estilo de "iniciar sesion" y "registrarse" */
+/*Estilo del titulo "iniciar sesion" y "registrarse" */
 .title { 
     text-align: center;
-    font-size: 3vh; /*no puedo cambiar el tamaño y no se por que*/
+    font-size: 25px;
+    text-shadow: 5px 5px 5px black; /*no puedo cambiar el tamaño y no se por que*/
     margin-top: 3vh;
     margin-bottom: 2vh;
-    color: rgba(187, 221, 215, 1);
+    color: rgb(255, 255, 255)
 
 }
 
-/* Estilo contenedor del formulario 
+/*Estilo contenedor del formulario de Inicio de sesion*/
 fieldset{
-    background-color: rgba(97, 115, 137, 1);
-    width: 22vw;
-    height: 44vh;
-    border-radius: 15%;
-    border-style: inset;
+    display: grid;
+    align-content: center;
+    background-color: rgba(241, 146, 22, 0.834);
+    border-radius: 30px;
+    border-style: hidden;
     box-shadow: 3vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15vh;
-
+    margin: 15vh auto 15vh auto ;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 
 }
-input{
-    background-color: rgba(187, 221, 215, 1);
-    border-radius: 35%;
-    height: 5vh;
-    margin: 0.5vh 1vw 0vw 1vw;
-    border-style: none;
-    padding: 1.5vh;
+.inicio-sesion{
+    
+    width: 30vw;
+    min-height: 60vh;
+
 }
 
-label{
-    font-family: "ubuntu";
-    color:rgba(187, 221, 215, 1);
-    margin-top: 5vh;
-    text-align: left;
-    margin-left: 2vw;
+/*Estilo contenedor del formulario de registro*/
+.fieldset-registro{
+
+    width: 30vw;
+    min-height: 75vh;
 }
+
+
+.boton-sesion,.boton-registro{
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(48, 48, 48, 0.5);
+    color: #fff;
+    transition: background-color 0.5s;
+
+    margin-top: 10%;    
+
+    width: 152px;
+    height: 40px;
+    border-radius: 30px;
+    border-style: hidden;
+    cursor: pointer;
+}
+
+
+
+.boton-sesion:hover, .boton-registro:hover{
+    background-color:  rgba(241, 146, 22, 0.834);
+}
+
 .registro{
     text-align: center; 
-    margin-bottom: 20vh;
-    font-family: "ubuntu";
-    font-size: medium;
-    color: rgba(97, 115, 137, 1);
+    margin-top: 5vh;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
     }
-
-.boton{
-    text-align: center;
-    background-color: rgba(187, 221, 215, 1);
-    transition: background-color 0.5s;
+.botonNoCuenta{
+    background-color: inherit;
+    border-style: hidden;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    transition: color 0.5s;
+}
+.botonNoCuenta:hover{
+    color: rgba(48, 48, 48, 1);
 }
 
-.boton:hover{
-    background-color: rgba(97, 115, 137, 1);
-}
-
-footer{
-    background-color: rgba(187, 221, 215, 1);
-    max-height: 50vh;
+input{
     text-align: center;
+    background-color: rgb(236, 236, 236);
+    height: 40px;
+    margin-top: 2%;
+    border-radius: 30px;
+    border-style: inherit;
+    }
+    
+label{
+    font-family: "Ubuntu", sans-serif;
+    color:rgb(254, 254, 254);
+    text-align: left;
+    margin-left: 2vw;
+    }
+    
 
-} */
 /*FOOTER*/
 
 .container-footer {
@@ -219,12 +252,10 @@ footer{
     margin: 0 10px;
 }
 
-.footer-social img{
-    width: 50px;
-}
-
 .footer-social i{
-    width: 50px;
+    font-size: 50px;
+    align-self: center;
+    color: #ff9100d0;
 }
 
 .footer-links {
