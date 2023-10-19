@@ -419,7 +419,7 @@ h3 {
 }
 
 .widget-container {
-	/* color: #fff;
+	color: #fff;
 	text-align: left;
 	background: #55a8fd;
 	border: 1px solid #110101;
@@ -429,7 +429,7 @@ h3 {
 	max-width: 100%;
 	margin: 20 auto;
 	display: inline-block;
-	min-width: 100px; */
+	min-width: 100px;
 }
 
 h1 {
