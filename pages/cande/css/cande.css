@@ -110,33 +110,22 @@ nav {
     color: #ff0000;
 }
 
-
-/*Cande
-.barra{
-    font-family: "ubuntu";
-    font-size: 2.5vh;
-    text-decoration: none;
-    color:rgba(187, 221, 215, 1);
-    padding-left: 0.75vw;
-    padding-right: 0.75vw;
-}
-
 body{
     background-image: url('../img/fondo_libreria.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-Estilo de "iniciar sesion" y "registrarse" 
+
+/*Estilo de "iniciar sesion" y "registrarse" */
 .title { 
     text-align: center;
     font-size: 3vh; /*no puedo cambiar el tamaño y no se por que*/
-    /*font-family: ;
     margin-top: 3vh;
     margin-bottom: 2vh;
     color: rgba(187, 221, 215, 1);
 
-}*/
+}
 
 /* Estilo contenedor del formulario 
 fieldset{
