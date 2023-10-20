@@ -35,7 +35,6 @@ Mantente actualizado con nuestras últimas novedades y ofertas. Ofrecemos descue
 - [Candela Catelli Adem](https://github.com/CandelaCatelliAdem) - Diseño y desarrollo de registro.
 - [Isis Guadalupe Julian](https://github.com/GuadalupeJulian) - Diseño y desarrollo de contacto.
 - [Andrés Arnaldo Chaloupka](https://github.com/arnaldochaloupka) - Diseño y desarrollo de contenido.
-: 
 
 
 ---
