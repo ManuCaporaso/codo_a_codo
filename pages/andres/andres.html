@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+     <link rel="stylesheet" href="css/stylo.css">
+    <script src="js/buscarlibros.js"></script>
+    <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"></script>
+    <title>Recomendados</title>
+</head>
+
+<body>
+
+    <section class="principal">
+        <div class="logo">
+            <img src="img/58939f9f-3408-4a38-8cd2-e185b4604127.jpg" alt="Logo de la tienda">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Ingrese un título, autor, ISBN, palabra clave o categoria">
+            <button>BUSCAR</button>
+        </div>
+        <div class="actions">
+            <a href="#">Lista de Deseos</a>
+            <a href="#">Carrito de Compras</a>
+        </div>
+        <div class="user">
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Registro</a>
+        </div>
+    </section>
+
+    <header>
+        <nav>
+            <div class="enlaces">
+                <button class="animated-button" onclick="window.location.href = ''">INICIO</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">CATALOGO</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">NOVEDADES</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">DESTACADOS</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">OFERTAS</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">CONTACTO</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">MI CUENTA</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <header class="header">
+                <h2>Recomendados</h2>
+            </header>
+
+            <main class="contenido">
+                <h2>Destacado del Mes</h2>
+                <br>
+
+                <section>
+                    <img class="destacadomes" src="img/aprendizajebasadoenproyectos.jpg" alt="">
+                    <aside class="text">
+                        <h3>Título: Aprendizaje basado en proyectos</h3>
+                        <h3>Autor: Silvana Carnicero Sanguinetti</h3>
+                        <h3>Año: 2023</h3>
+                        <h3>Editorial: Noveduc</h3>
+                        <h3>Temática: Proyectos, Educación</h3>
+                    </aside>
+                </section>
+
+            </main>
+            <aside class="sidebar">
+
+                <div>
+                    <div>
+                        <h3>Compras del Mes</h3>
+                        <br>
+                    </div>
+                    <div class="comprasmes">
+                    </div>
+                </div>
+
+                <section>
+
+                    <form action="https://formspree.io/f/xaygayzr" method="post" class="formulario">
+                        <!--  Crear campos para nombre, apellido, fecha de nacimiento
+                y edad.  -->
+                        <h3>Sugerencia de compras</h3>
+                        <br>
+                        <div>
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" name="nombre" id="nombre" maxlength="10" required
+                                placeholder="Ej: Maria">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Ej: Ramirez">
+                        </div>
+                        <div>
+                            <label for="correo">Correo:</label>
+                            <input type="text" name="correo" id="correo" placeholder="correo@xxmail.com">
+                        </div>
+                        <br>
+                        <div>
+                            <textarea name="comentario" id="comentario" cols="30" rows="5" maxlength="30"
+                                placeholder="Sugerencia de compra: Escribe el Autor, título, editorial u otros datos"></textarea>
+                        </div>
+
+                        <div>
+                            <!-- Agregar los botones para enviar(submit) y borrar(reset). -->
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+
+
+            </aside>
+
+            <div class="widget-1 widgets">
+                <a class="accesosdirectos" href="http://www.bnm.me.gov.ar/" target="_blank">Acceso Directo a Biblioteca
+                    Nacional</a>
+
+            </div>
+            <div class="widget-2 widgets">
+                <a class="accesosdirectos" href="https://www.bn.gov.ar/" target="_blank">Directo a Biblioteca Mariano
+                    Moreno</a>
+
+
+            </div>
+            <div class="widget-3 widgets">
+                <a class="accesosdirectos" href="https://ri.conicet.gov.ar/" target="_blank">Repositorio CONICET</a>
+
+            </div>
+            <div class="widget-4 widgets">
+                <a class="accesosdirectos" href="https://bibliotecapedagogica3.blogspot.com/" target="_blank">Blog
+                    Biblioteca Pedagógica N° 3</a>
+
+
+            </div>
+
+            <div class="widget-container">
+                <h3>Catálogo de la Biblioteca: Búsqueda por Autor, Título y Género</h3>
+                <br>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Escribe el autor o título del libro">
+                    <button onclick="searchBooks()">Buscar</button>
+                </div>
+                <ul id="results"></ul>
+            </div>
+
+
+
+        </div>
+
+    </main>
+<footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/58939f9f-3408-4a38-8cd2-e185b4604127.jpg" alt="Logo de la tienda">
+                </div>
+                <div class="footer-info">
+                    <p><strong>23528 BOOKS </strong></p>
+                    <p><em>Tu destino para explorar nuevos mundos</em></p>
+                    <p>Dirección: 123 Calle de los Libros</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
