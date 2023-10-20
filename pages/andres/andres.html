@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-     <link rel="stylesheet" href="css/stylo.css">
-    <script src="js/buscarlibros.js"></script>
     <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/style.css">
     <title>Recomendados</title>
 </head>
 
@@ -16,42 +14,34 @@
 
     <section class="principal">
         <div class="logo">
-            <img src="img/58939f9f-3408-4a38-8cd2-e185b4604127.jpg" alt="Logo de la tienda">
+            <img src="./img/logo2.png" alt="Logo de la tienda">
         </div>
         <div class="search">
             <input type="text" placeholder="Ingrese un título, autor, ISBN, palabra clave o categoria">
             <button>BUSCAR</button>
+            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="actions">
-            <a href="#">Lista de Deseos</a>
-            <a href="#">Carrito de Compras</a>
+            <a href="../../contacto/index.html">Lista de Deseados</a>
+            <i class="fa-solid fa-heart"></i>
+
         </div>
         <div class="user">
-            <a href="#">Iniciar sesión</a>
-            <a href="#">Registro</a>
+            <a href="../cande/cande.html">Iniciar sesión</a>
+            <a href="../cande/registrate.html">Registro</a>
         </div>
     </section>
 
     <header>
         <nav>
             <div class="enlaces">
-                <button class="animated-button" onclick="window.location.href = ''">INICIO</a>
+                <button class="animated-button" onclick="window.location.href = '../../home/home.html'">INICIO</a>
                 </button>
-                <button class="animated-button" onclick="window.location.href = ''">CATALOGO</a>
+                <button class="animated-button" onclick="window.location.href = './andres.html'">RECOMENDADOS</a>
                 </button>
-                <button class="animated-button" onclick="window.location.href = ''">NOVEDADES</a>
+                <button class="animated-button" onclick="window.location.href = '../guadalupe/guada.html'">CONTACTO</a>
                 </button>
-                </button>
-                <button class="animated-button" onclick="window.location.href = ''">DESTACADOS</a>
-                </button>
-                </button>
-                <button class="animated-button" onclick="window.location.href = ''">OFERTAS</a>
-                </button>
-                </button>
-                <button class="animated-button" onclick="window.location.href = ''">CONTACTO</a>
-                </button>
-                </button>
-                <button class="animated-button" onclick="window.location.href = ''">MI CUENTA</a>
+                <button class="animated-button" onclick="window.location.href = '../manu/index.html'">MI CUENTA</a>
                 </button>
             </div>
         </nav>
@@ -60,7 +50,7 @@
     <main>
         <div class="contenedor">
             <header class="header">
-                <h2>Recomendados</h2>
+                <h2>RECOMENDADOS</h2>
             </header>
 
             <main class="contenido">
@@ -196,6 +186,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/buscarlibros.js"></script>
 </body>
 
 </html>

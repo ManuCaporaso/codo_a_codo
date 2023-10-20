@@ -73,7 +73,7 @@ body{
    background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
    color: #fff; /* Texto en color blanco */
    text-align: center; /* Centrar el contenido del encabezado */
-   padding: 20px 0; /* Espacio interno en la parte superior e inferior */
+   padding: 10px 0; /* Espacio interno en la parte superior e inferior */
 }
 
 /* Estilo para la barra de navegación */
@@ -114,53 +114,42 @@ nav {
 
 
 
+/*LISTAS DE DESEADOS*/
 
-
-
-/*INFORMACION DE CONTACTO*/
-
- .contact-info {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px;
-}
-
-.contact-details, .location-map {
-    flex: 1;
-    text-align: center;
-}
-
-.contact-details {
-    background-color: #f2f2f2;
-    padding: 20px;
-    font-size: 40px;
-}
-
-.contact-form {
+ .wishlist {
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
+}
+
+.book {
     background-color: #f2f2f2;
-    margin-bottom: 200px;
-    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    flex-basis: calc(33.33% - 20px); /* Para que haya 3 libros por fila */
 }
 
-label, input, textarea {
-    display: block;
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.book-details {
     margin: 10px 0;
-    width: 80%;
-    text-align: center;
-    padding: 10px;
 }
 
-button {
-    background-color: #333;
+.remove-button {
+    background-color: #ff0000;
     color: #fff;
-    padding: 10px;
     border: none;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
-
 
 
 

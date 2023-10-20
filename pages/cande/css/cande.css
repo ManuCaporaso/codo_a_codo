@@ -1,30 +1,28 @@
 /* Fuentes  */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-/*Color theme naranja*/
-.Mini-Biblioteca-6-rgba { color: rgba(97, 115, 137, 1); }
-.Mini-Biblioteca-7-rgba { color: rgba(187, 221, 215, 1); }
-.Mini-Biblioteca-8-rgba { color: rgba(236, 161, 124, 1); }
-.Mini-Biblioteca-9-rgba { color: rgba(202, 121, 104, 1); }
-
-
-
-
 /* Estilo comun a toda la pagina */
-*{
-    
-    margin: 0%;
-    padding: 0%;
-    
+* {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+ }
+
+/*BODY*/
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fondo_libreria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
+/*BUSQUEDA DE TITULOS*/
 
 .principal {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    font-family: "Ubuntu", sans-serif;
 }
 
 .logo img {
@@ -49,6 +47,13 @@
     cursor: pointer;
 }
 
+.search i {
+    font-size: 20px;
+    margin: 0 15px;
+    color: #fff;
+    align-self: center;
+}
+
 .user a,
 .actions a {
     text-decoration: none;
@@ -58,11 +63,15 @@
     text-shadow: 5px 5px 10px black;
 }
 
+.actions i{
+    color: #da0000;
+    margin-right: 10px;
+}
 
 /*HEADER*/
 
  /* Estilo para el encabezado y la barra de navegación */
-header {
+ header {
    background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
    color: #fff; /* Texto en color blanco */
    text-align: center; /* Centrar el contenido del encabezado */
@@ -83,36 +92,30 @@ nav {
 /*estilos de los botones del nav */
 
 .animated-button {
-    position: relative;
-    display: inline-block;
-    margin: 5px;
-    padding: 12px 15px;
-    border: none;
-    text-shadow: 5px 5px 5px black;
-    font-size: 20px;
-    background-color: inherit;
-    border-radius: 15px;
-    font-weight: 600;
-    color: rgb(253, 253, 253);
-    box-shadow: 0 0 0 2px rgb(255, 238, 0);
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-    }
+   position: relative;
+   display: inline-block;
+   margin: 5px;
+   padding: 12px 15px;
+   border: none;
+   text-shadow: 5px 5px 5px black;
+   font-size: 20px;
+   background-color: inherit;
+   border-radius: 15px;
+   font-weight: 600;
+   color: rgb(253, 253, 253);
+   box-shadow: 0 0 0 2px rgb(255, 238, 0);
+   cursor: pointer;
+   overflow: hidden;
+   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+ }
+ 
+ .animated-button:hover {
+   box-shadow: 0 0 0 10px #fffb0060;
+   color: #ff0000;
+ }
 
-.animated-button:hover {
-    box-shadow: 0 0 0 10px #fffb0060;
-    color: #ff0000;
-}
 
 
-/*BODY*/
-body{
-    background-image: url('../img/fondo_libreria.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
 /*Estilo del titulo "iniciar sesion" y "registrarse" */
 .title { 
@@ -156,7 +159,6 @@ fieldset{
 
 
 .boton-sesion,.boton-registro{
-    font-family: "Ubuntu", sans-serif;
     text-align: center;
     font-size: 16px;
     background-color: rgba(48, 48, 48, 0.5);
@@ -181,7 +183,6 @@ fieldset{
 .registro{
     text-align: center; 
     margin-top: 5vh;
-    font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
     }
@@ -189,7 +190,6 @@ fieldset{
     background-color: inherit;
     border-style: hidden;
     color: #fff;
-    font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     transition: color 0.5s;
 }
@@ -207,7 +207,7 @@ input{
     }
     
 label{
-    font-family: "Ubuntu", sans-serif;
+
     color:rgb(254, 254, 254);
     text-align: left;
     margin-left: 2vw;
