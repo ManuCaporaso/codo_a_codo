@@ -57,3 +57,14 @@ function showSlides(n) {
 setInterval(() => {
     plusSlides(1);
 }, 5000);
+
+//Ocultar iFrame
+
+function ocultar() {
+    var x = document.getElementById("esconder");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+  }
