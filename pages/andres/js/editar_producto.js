@@ -27,7 +27,7 @@ function modificar() {
     fetch(url, options)
         .then(function () {
             console.log("modificado")
-            alert("Registro modificado")
+            alert("Sugerencia de compra modificada")
 
             //Puedes utilizar window.location.href para obtener la URL actual, redirigir a otras páginas
            window.location.href = "../tabla_productos.html";

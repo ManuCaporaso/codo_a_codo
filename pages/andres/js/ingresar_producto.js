@@ -23,7 +23,7 @@ function guardar() {
     fetch(url, options)
         .then(function () {
             console.log("creado")
-            alert("Grabado")
+            alert("Sugerencia de compra creada")
             // Devuelve el href (URL) de la página actual
             window.location.href = "../tabla_productos.html";  
             

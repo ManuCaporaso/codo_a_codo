@@ -39,7 +39,7 @@ const { createApp } = Vue
             fetch(url, options)
                 .then(res => res.text()) // or res.json()
                 .then(res => {
-                    alert("Eliminado correctamente")
+                    alert("Sugerencia eliminada correctamente")
                     location.reload();
                 })
         }
