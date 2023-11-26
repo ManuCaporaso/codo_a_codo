@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-     <link rel="stylesheet" href="css/stylo.css">
+    <link rel="stylesheet" href="css/stylo.css">
+    <link rel="stylesheet" href="css/tabla_productos.css">
     <script src="js/buscarlibros.js"></script>
     <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"></script>
     <title>Recomendados</title>
@@ -91,39 +92,9 @@
                 </div>
 
                 <section>
-
-                    <form action="https://formspree.io/f/xaygayzr" method="post" class="formulario">
-                        <!--  Crear campos para nombre, apellido, fecha de nacimiento
-                y edad.  -->
-                        <h3>Sugerencia de compras</h3>
-                        <br>
-                        <div>
-                            <label for="nombre">Nombre: </label>
-                            <input type="text" name="nombre" id="nombre" maxlength="10" required
-                                placeholder="Ej: Maria">
-                        </div>
-                        <div>
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" name="apellido" id="apellido" placeholder="Ej: Ramirez">
-                        </div>
-                        <div>
-                            <label for="correo">Correo:</label>
-                            <input type="text" name="correo" id="correo" placeholder="correo@xxmail.com">
-                        </div>
-                        <br>
-                        <div>
-                            <textarea name="comentario" id="comentario" cols="30" rows="5" maxlength="30"
-                                placeholder="Sugerencia de compra: Escribe el Autor, título, editorial u otros datos"></textarea>
-                        </div>
-
-                        <div>
-                            <!-- Agregar los botones para enviar(submit) y borrar(reset). -->
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar">
-
-                        </div>
-
-                    </form>
+                    <br>
+                    <br>
+                    <a class="nuevo" href="templates/ingresar_producto.html">Sugerencia de Compras</a>
 
                 </section>
 
@@ -168,7 +139,7 @@
         </div>
 
     </main>
-<footer class="footer">
+    <footer class="footer">
         <div class="container-footer">
             <div class="footer-content">
                 <div class="footer-logo">
@@ -183,7 +154,8 @@
                 <div class="footer-social">
                     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <hr>
@@ -199,4 +171,3 @@
 </body>
 
 </html>
-
