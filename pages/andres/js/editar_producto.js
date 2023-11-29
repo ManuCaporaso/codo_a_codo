@@ -30,7 +30,7 @@ function modificar() {
             alert("Sugerencia de compra modificada")
 
             //Puedes utilizar window.location.href para obtener la URL actual, redirigir a otras páginas
-           window.location.href = "../tabla_productos.html";
+           window.location.href = "../index.html";
           
         })
         .catch(err => {
