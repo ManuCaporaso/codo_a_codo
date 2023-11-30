@@ -14,13 +14,14 @@
 
 form{
     background-color: #001F3F;
-    width: 30vw;
+    width: 60vw;
     height: 50vh;
     border-radius: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: .5rem;
 }
 
 .entrada{
@@ -28,7 +29,7 @@ form{
 }
 
 label{
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: aliceblue;
 }
@@ -54,127 +55,35 @@ button {
     color: #f2f2f2;
     margin-right: 2vh;
     background-color: #ff9999; /* Color de fondo */
-    color: white; /* Color del texto */
     padding: 0.5vw 3vh; /* Relleno interno */
     border: none; /* Quita el borde */
     border-radius: 2vw; /* Borde redondeado */
     text-align: center; /* Alineación del texto */
     text-decoration: none; /* Quita el subrayado predeterminado */
     display: inline-block; /* Mostrar como bloque en línea */
-    font-size: 1vw; /* Tamaño de fuente */
+    font-size: 1.4rem; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
+
 }
 
 @media screen and (max-width:768px){
+    .menu {
+        padding: 0 5%;
+    }
     form{
-        background-color: #001F3F;
-        width: 50vw;
-        height: 50vh;
-        border-radius: 3vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    label{
-        font-size: 4vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: aliceblue;
-    }
-
-    a{
-        font-size: 4vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-decoration: none;
-        color: aliceblue;
-        
-    }
-
-    .modificar{
-        color: #f2f2f2;
-        margin-right: 2vh;
-        background-color: #ff9999; /* Color de fondo */
-        color: white; /* Color del texto */
-        padding: 0.5vw 3vh; /* Relleno interno */
-        border: none; /* Quita el borde */
-        border-radius: 2vw; /* Borde redondeado */
-        text-align: center; /* Alineación del texto */
-        text-decoration: none; /* Quita el subrayado predeterminado */
-        display: inline-block; /* Mostrar como bloque en línea */
-        font-size: 3vw; /* Tamaño de fuente */
-        cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    }
-}
-
-@media screen and (max-width:425px){
-    form{
-        background-color: #001F3F;
         width: 80vw;
-        height: 40vh;
-        border-radius: 3vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    label{
-        font-size: 6vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: aliceblue;
+        height: auto;
     }
 
     a{
-        font-size: 6vw;
+        font-size: 1.3rem;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-decoration: none;
         color: aliceblue;
-        
     }
-
-    .modificar{
-        color: #f2f2f2;
-        margin-right: 2vh;
-        background-color: #ff9999; /* Color de fondo */
-        color: white; /* Color del texto */
-        padding: 0.5vw 3vh; /* Relleno interno */
-        border: none; /* Quita el borde */
-        border-radius: 2vw; /* Borde redondeado */
-        text-align: center; /* Alineación del texto */
-        text-decoration: none; /* Quita el subrayado predeterminado */
-        display: inline-block; /* Mostrar como bloque en línea */
-        font-size: 5vw; /* Tamaño de fuente */
-        cursor: pointer; /* Cambia el cursor al pasar el ratón */
-    }
-}
-
-
-@media screen and (max-width:320px){
-    form{
-        background-color: #001F3F;
-        width: 80vw;
-        height: 50vh;
-        border-radius: 3vw;
+    .entrada{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    label{
-        font-size: 6vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color: aliceblue;
-    }
-
-    a{
-        font-size: 6vw;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-decoration: none;
-        color: aliceblue;
-        
+        width: 95%;
     }
 }
-
-

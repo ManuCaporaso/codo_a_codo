@@ -41,8 +41,10 @@ th {
 }
 
 a{
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
-    color: #dddddd;
+    color: aliceblue;
 }
 
 td:hover{
@@ -121,5 +123,8 @@ img{
     height: 10vh;
 }
 
-
-
+@media screen and (max-width:768px){
+    .menu {
+        padding: 0 5%;
+    }
+}
