@@ -1,7 +1,7 @@
 /* Fuentes  */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-/*Color theme naranja*/
+/*Biblioteca de colores*/
 .Mini-Biblioteca-6-rgba { color: rgba(97, 115, 137, 1); }
 .Mini-Biblioteca-7-rgba { color: rgba(187, 221, 215, 1); }
 .Mini-Biblioteca-8-rgba { color: rgba(236, 161, 124, 1); }
@@ -15,14 +15,16 @@
     
     margin: 0%;
     padding: 0%;
-    
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
 }
 
 
 .principal {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    /*justify-content: space-evenly;
+    align-items: center;*/
     padding: 10px 20px;
     font-family: "Ubuntu", sans-serif;
 }
@@ -63,8 +65,8 @@
 
  /* Estilo para el encabezado y la barra de navegación */
 header {
-   background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
-   color: #fff; /* Texto en color blanco */
+   background-color:rgba(97, 115, 137, 1); /*Fondo oscuro para el encabezado */
+   color: rgba(97, 115, 137, 0.8); /* Texto en color blanco */
    text-align: center; /* Centrar el contenido del encabezado */
    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
 }
@@ -94,22 +96,22 @@ nav {
     border-radius: 15px;
     font-weight: 600;
     color: rgb(253, 253, 253);
-    box-shadow: 0 0 0 2px rgb(255, 238, 0);
+    box-shadow: 0 0 0 2px #ff9100d0;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
     }
 
 .animated-button:hover {
-    box-shadow: 0 0 0 10px #fffb0060;
-    color: #ff0000;
+    box-shadow: 0 0 0 10px #ff9100d0;
+    color: rgba(187, 221, 215, 1);
 }
 
 
 /*BODY*/
 
 body{
-    background-image: url('../img/fondo_libreria.jpg');
+    background-image: url('../img/fondo_libreria\ 1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -131,8 +133,8 @@ fieldset{
     display: grid;
     justify-items: center;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(241, 146, 22, 0.834);
+    justify-content:center;
+    background-color: rgba(97, 115, 137, 1);
     border-radius: 30px;
     border-style: hidden;
     box-shadow: 3vw;
@@ -142,6 +144,9 @@ fieldset{
 
 }
 
+.email,.password {
+    justify-content: flex-start;    
+}
 /*Caracteristicas especificas del tamaño del contenedor de la pantalla de Incio de Sesion*/
 .inicio-sesion{
     
@@ -162,8 +167,8 @@ fieldset{
     font-family: "Ubuntu", sans-serif;
     text-align: center;
     font-size: 16px;
-    background-color: rgba(48, 48, 48, 0.5);
-    color: #fff;
+    background-color: rgba(187, 221, 215, 1);
+    color: rgba(97, 115, 137, 0.8);
     transition: background-color 0.5s;
 
     margin-top: 10%;    
@@ -178,7 +183,8 @@ fieldset{
 
 /*Animacion de los botones del formulario*/
 .boton-sesion:hover, .boton-registro:hover{
-    background-color:  rgba(241, 146, 22, 0.834);
+    background-color:  #ff9100d0;
+    color: rgba(97, 115, 137, 1);
 }
 
 /*Caracteristica del texto "No tenes cuenta"*/
@@ -194,7 +200,7 @@ fieldset{
 .botonNoCuenta{
     background-color: inherit;
     border-style: hidden;
-    color: #fff;
+    color: #ff9100d0;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     transition: color 0.5s;
@@ -206,7 +212,7 @@ fieldset{
 /*Estilos de los imput de inicio de sesion y registro y de sus respectivos label*/
 input{
     text-align: center;
-    background-color: rgb(236, 236, 236);
+    background-color: rgba(187, 221, 215, 1);
     height: 40px;
     margin-top: 2%;
     border-radius: 30px;
@@ -230,7 +236,7 @@ label{
 }
 
 .footer {
-    background-color: #333;
+    background-color: rgba(97, 115, 137, 1);
     color: #fff;
     padding: 20px 0;
 }

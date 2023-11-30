@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    /*Elimina todo margen que trae por defecto*/
+    padding: 0%;
+    /*Elimina todo relleno que trae por defecto*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./asets/fondo_libreria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.principal {
+    display: flex;  
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search button {
+    background-color: #ff9100d0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user a,
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+    text-shadow: 5px 5px 10px black;
+}
+
+
+/*HEADER*/
+
+/* Estilo para el encabezado y la barra de navegación */
+header {
+    background-color: #ff9100d0;
+    /* Fondo oscuro para el encabezado */
+    color: #fff;
+    /* Texto en color blanco */
+    text-align: center;
+    /* Centrar el contenido del encabezado */
+    padding: 10px 0;
+    /* Espacio interno en la parte superior e inferior */
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    display: flex;
+    /* Mostrar elementos en una línea */
+    justify-content: center;
+    /* Distribuir los elementos de izquierda a derecha */
+    align-items: center;
+    /* Centrar verticalmente los elementos */
+    max-width: auto;
+    /* Ancho máximo de la barra de navegación */
+    margin: 0 auto;
+    /* Centrar la barra de navegación en la página */
+    padding: 0 20px;
+    /* Espacio interno en los lados izquierdo y derecho */
+}
+
+
+/*estilos de los botones del nav */
+
+.animated-button {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 15px;
+    border: none;
+    text-shadow: 5px 5px 5px black;
+    font-size: 20px;
+    background-color: inherit;
+    border-radius: 15px;
+    font-weight: 600;
+    color: rgb(253, 253, 253);
+    box-shadow: 0 0 0 2px rgb(255, 238, 0);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 10px #fffb0060;
+    color: #ff0000;
+}
+
+
+
+
+.form {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: #000000;
+    padding: 4.5em 3em;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30%);
+    text-align: center;
+
+}
+
+.form-titulo {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+.form-contenido {
+    margin-top: 3em;
+    display: grid;
+    gap: 0.5em;
+}
+
+.form-grupo {
+    position: relative;
+    --color: #5757577e;
+}
+
+.field {
+    width: 100%;
+    background: none;
+    color: black;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.field:focus {
+    border-color: #f7b945;
+
+}
+
+.form-submit {
+    background: #f7b945;
+    color: #000000;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+/*FOOTER*/
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-info,
+.footer-social {
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+
+.footer-social i {
+    width: 50px;
+}
+
+.footer-social i{
+    font-size: 40px;
+    margin: 0 18px;
+    align-self: center;
+    color: #ff9100d0;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-right: 100px;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
