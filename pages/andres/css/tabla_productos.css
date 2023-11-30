@@ -70,8 +70,7 @@ a:hover{
 
 }
 
-button{
-    
+button{    
     margin-right: 2vh;
     background-color: red; /* Color de fondo */
     color: white; /* Color del texto */
@@ -83,15 +82,18 @@ button{
     display: inline-block; /* Mostrar como bloque en línea */
     font-size: 1vw; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: .5s;
+}
+
+button:hover{
+    background-color: rgb(255, 32, 32);
     
 }
 
 .boton{
-    
     color: #f2f2f2;
     margin-right: 2vh;
     background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
     padding: 0.5vw 3vh; /* Relleno interno */
     border: none; /* Quita el borde */
     border-radius: 2vw; /* Borde redondeado */
@@ -100,6 +102,10 @@ button{
     display: inline-block; /* Mostrar como bloque en línea */
     font-size: 1vw; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: .5s;
+}
+.boton:hover{
+    background-color: #45ca49;
 }
 
 .nuevo{
