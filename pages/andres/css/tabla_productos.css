@@ -41,10 +41,18 @@ th {
 }
 
 a{
-    font-size: 1.3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration: none;
-    color: aliceblue;
+    color: #f2f2f2;
+    margin-right: 2vh;
+    background-color: #2781dc50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 0.5vw 3vh; /* Relleno interno */
+    border: none; /* Quita el borde */
+    border-radius: 2vw; /* Borde redondeado */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 1.5vw; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
 }
 
 td:hover{
@@ -60,7 +68,7 @@ a:hover{
 .menu{
     text-decoration: none;
     background-color: #001F3F;
-    height: 10vh;
+    height: 4.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +127,7 @@ button:hover{
     text-align: center; /* Alineación del texto */
     text-decoration: none; /* Quita el subrayado predeterminado */
     display: inline-block; /* Mostrar como bloque en línea */
-    font-size: 1.7vw; /* Tamaño de fuente */
+    font-size: 1.5vw; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
 }
 
