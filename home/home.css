@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+.Mini-Biblioteca-6-rgba { color: rgba(97, 115, 137, 1); }
+.Mini-Biblioteca-7-rgba { color: rgba(187, 221, 215, 1); }
+.Mini-Biblioteca-8-rgba { color: rgba(236, 161, 124, 1); }
+
 * {
    margin: 0px;
    text-align: center;
@@ -36,7 +40,7 @@ body{
 }
 
 .search button {
-    background-color: #ff9100d0;
+    background-color: rgba(97, 115, 137, 0.9);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -70,8 +74,8 @@ body{
 
  /* Estilo para el encabezado y la barra de navegación */
  header {
-   background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
-   color: #fff; /* Texto en color blanco */
+   background-color: #ffffffab; /* Fondo para el encabezado */
+   color: rgba(97, 115, 137, 1); /* Texto en color blanco */
    text-align: center; /* Centrar el contenido del encabezado */
    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
 }
@@ -95,21 +99,21 @@ nav {
    margin: 5px;
    padding: 12px 15px;
    border: none;
-   text-shadow: 5px 5px 5px black;
+   text-shadow: 5px 5px 5px rgba(255, 166, 0, 0.873);
    font-size: 20px;
    background-color: inherit;
    border-radius: 15px;
    font-weight: 600;
-   color: rgb(253, 253, 253);
-   box-shadow: 0 0 0 2px rgb(255, 238, 0);
+   color: rgba(97, 115, 137, 0.9);
+   box-shadow: 0 0 0 2px rgba(97, 115, 137, 0.9);
    cursor: pointer;
    overflow: hidden;
    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
  }
  
  .animated-button:hover {
-   box-shadow: 0 0 0 10px #fffb0060;
-   color: #ff0000;
+   box-shadow: 0 0 0 10px rgba(255, 166, 0, 0.873);
+   color: rgba(255, 166, 0, 0.873);
  }
 
 
@@ -152,7 +156,7 @@ h2 {
 .book img {
     max-width: 100%;
     width: 200px;
-    border: 1px solid #da0000;
+    border: 2px solid rgba(255, 166, 0, 0.873);
     border-radius: 4px;
 }
 
