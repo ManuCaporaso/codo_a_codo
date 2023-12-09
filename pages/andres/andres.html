@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylo.css">
+    <link rel="stylesheet" href="css/tabla_productos.css">
+    <script src="js/buscarlibros.js"></script>
     <script src="https://kit.fontawesome.com/3e8b0b13fa.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="css/style.css">
     <title>Recomendados</title>
 </head>
 
@@ -14,34 +17,42 @@
 
     <section class="principal">
         <div class="logo">
-            <img src="./img/logo2.png" alt="Logo de la tienda">
+            <img src="img/58939f9f-3408-4a38-8cd2-e185b4604127.jpg" alt="Logo de la tienda">
         </div>
         <div class="search">
             <input type="text" placeholder="Ingrese un título, autor, ISBN, palabra clave o categoria">
             <button>BUSCAR</button>
-            <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <div class="actions">
-            <a href="../../contacto/index.html">Lista de Deseados</a>
-            <i class="fa-solid fa-heart"></i>
-
+            <a href="#">Lista de Deseos</a>
+            <a href="#">Carrito de Compras</a>
         </div>
         <div class="user">
-            <a href="../cande/cande.html">Iniciar sesión</a>
-            <a href="../cande/registrate.html">Registro</a>
+            <a href="#">Iniciar sesión</a>
+            <a href="#">Registro</a>
         </div>
     </section>
 
     <header>
         <nav>
             <div class="enlaces">
-                <button class="animated-button" onclick="window.location.href = '../../index.html'">INICIO</a>
+                <button class="animated-button" onclick="window.location.href = ''">INICIO</a>
                 </button>
-                <button class="animated-button" onclick="window.location.href = './andres.html'">RECOMENDADOS</a>
+                <button class="animated-button" onclick="window.location.href = ''">CATALOGO</a>
                 </button>
-                <button class="animated-button" onclick="window.location.href = '../guadalupe/guada.html'">CONTACTO</a>
+                <button class="animated-button" onclick="window.location.href = ''">NOVEDADES</a>
                 </button>
-                <button class="animated-button" onclick="window.location.href = '../manu/index.html'">MI CUENTA</a>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">DESTACADOS</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">OFERTAS</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">CONTACTO</a>
+                </button>
+                </button>
+                <button class="animated-button" onclick="window.location.href = ''">MI CUENTA</a>
                 </button>
             </div>
         </nav>
@@ -50,7 +61,7 @@
     <main>
         <div class="contenedor">
             <header class="header">
-                <h2>RECOMENDADOS</h2>
+                <h2>Recomendados</h2>
             </header>
 
             <main class="contenido">
@@ -81,39 +92,9 @@
                 </div>
 
                 <section>
-
-                    <form action="https://formspree.io/f/xaygayzr" method="post" class="formulario">
-                        <!--  Crear campos para nombre, apellido, fecha de nacimiento
-                y edad.  -->
-                        <h3>Sugerencia de compras</h3>
-                        <br>
-                        <div>
-                            <label for="nombre">Nombre: </label>
-                            <input type="text" name="nombre" id="nombre" maxlength="10" required
-                                placeholder="Ej: Maria">
-                        </div>
-                        <div>
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" name="apellido" id="apellido" placeholder="Ej: Ramirez">
-                        </div>
-                        <div>
-                            <label for="correo">Correo:</label>
-                            <input type="text" name="correo" id="correo" placeholder="correo@xxmail.com">
-                        </div>
-                        <br>
-                        <div>
-                            <textarea name="comentario" id="comentario" cols="30" rows="5" maxlength="30"
-                                placeholder="Sugerencia de compra: Escribe el Autor, título, editorial u otros datos"></textarea>
-                        </div>
-
-                        <div>
-                            <!-- Agregar los botones para enviar(submit) y borrar(reset). -->
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Borrar">
-
-                        </div>
-
-                    </form>
+                    <br>
+                    <br>
+                    <a class="nuevo" href="templates/ingresar_producto.html">Sugerencia de Compras</a>
 
                 </section>
 
@@ -158,7 +139,7 @@
         </div>
 
     </main>
-<footer class="footer">
+    <footer class="footer">
         <div class="container-footer">
             <div class="footer-content">
                 <div class="footer-logo">
@@ -173,7 +154,8 @@
                 <div class="footer-social">
                     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
             <hr>
@@ -186,9 +168,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/buscarlibros.js"></script>
 </body>
 
 </html>
-
