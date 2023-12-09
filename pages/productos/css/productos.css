@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+ }
+ 
+ body{
+  background-image:  url('../../../asets/fondo_administracion.jpg');
+  background-size:cover;
+ }
+
+.titulo{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+ }
+
+ .salir{
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+ }
+
+table tr, td, thead, tbody, label, p{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    margin:  20px;
+ }
+
+ .table-responsive{
+    margin-bottom: 300px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*FOOTER*/
+
+ .container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-info, .footer-social {
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-social i{
+    font-size: 50px;
+    margin: 0 18px;
+    align-self: center;
+    color: #ff9100d0;
+}
+
+.footer-social i{
+    width: 50px;
+}
+
+.footer-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-right: 95px;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+}

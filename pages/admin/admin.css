@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image:  url('../../../asets/fondo_login_administracion.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    margin: 50px;
+}
+
+.login-container {
+    background-color: #ff9100d0;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    font-size: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #da0000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0048ffd0;
+}
