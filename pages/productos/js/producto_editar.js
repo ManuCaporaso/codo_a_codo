@@ -10,7 +10,7 @@ nombre:"",
 imagen:"",
 stock:0,
 precio:0,
-url:'https://manucaporaso.pythonanywhere.com/productos'+id,
+url:'https://manucaporaso.pythonanywhere.com/productos/'+id,
 }
 },
 methods: {
