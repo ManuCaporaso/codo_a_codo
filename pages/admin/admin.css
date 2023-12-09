@@ -11,6 +11,14 @@ body {
     background-repeat: no-repeat;
 }
 
+.salir{
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
 .logo{
     margin: 50px;
 }
