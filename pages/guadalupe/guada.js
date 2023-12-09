@@ -29,17 +29,18 @@ boton.addEventListener("click", () => {
 
     if (nombre == "") {
         console.log ("Complete su nombre");
-        return false;
+        
     }
 
     if (apellido == "") {
         postMessage ("Complete su apellido")
-        return false;
+        
     }
 
     else {
         var nombre_apell_valid =  /^[A-Za-z\s]+$/;
         var email_valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,5})+$/.test(email)
+
         if (!nombre_apell_valid.test(nombre)){
             postMessage ("Nombre invalido, reingreselo")
         }
