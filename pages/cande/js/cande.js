@@ -14,11 +14,10 @@ let claveGuardada = localStorage.getItem ("clave")
 botonIngresar.addEventListener ("click", () => {
     
     if (emailGuardado && claveGuardada) {
-        mensajeBienvenida.textContent = 'Ha iniciado sesion como ${userName}'}
+        mensajeBienvenida.textContent = 'Ha iniciado sesion como ${userName}';
+        window.location = "home.html";}
     else {
         postMessage('Usted no tiene sesion aun, registrese')
     }
-    
-
     
 })
