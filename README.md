@@ -18,7 +18,7 @@ Nuestra Librería en Línea es una plataforma para amantes de la lectura que les
 ## Tecnología Utilizada
 
 - **Frontend**: Utilizamos [HTML] Y [JAVASCRIPT] para crear la interfaz de usuario interactiva y [CSS3]para estilos personalizados.
-
+- **Backend**: Utilizamos [PYTHON], [FLASK] y [MYSQL]para construir una API RESTfull implementando el protocolo HTTP y los metodos GET, POST, PUT y DELETE.
 
 ## Lista de Deseos
 
