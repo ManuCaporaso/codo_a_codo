@@ -5,9 +5,6 @@
 .Mini-Biblioteca-6-rgba { color: rgba(97, 115, 137, 1); }
 .Mini-Biblioteca-7-rgba { color: rgba(187, 221, 215, 1); }
 .Mini-Biblioteca-8-rgba { color: rgba(236, 161, 124, 1); }
-.Mini-Biblioteca-9-rgba { color: rgba(202, 121, 104, 1); }
-
-
 
 
 /* Estilo comun a toda la pagina */
@@ -18,6 +15,7 @@
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -64,12 +62,13 @@
 /*HEADER*/
 
  /* Estilo para el encabezado y la barra de navegación */
-header {
-   background-color:rgba(97, 115, 137, 1); /*Fondo oscuro para el encabezado */
-   color: rgba(97, 115, 137, 0.8); /* Texto en color blanco */
-   text-align: center; /* Centrar el contenido del encabezado */
-   padding: 10px 0; /* Espacio interno en la parte superior e inferior */
-}
+ header {
+    background-color: rgba(215, 215, 215, 0.9); /* Fondo para el encabezado */
+    color: rgba(97, 115, 137, 1); /* Texto en color blanco */
+    text-align: center; /* Centrar el contenido del encabezado */
+    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
+ }
+ 
 
 /* Estilo para la barra de navegación */
 nav {
@@ -90,23 +89,22 @@ nav {
     margin: 5px;
     padding: 12px 15px;
     border: none;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 5px 5px 5px rgba(255, 166, 0, 0.873);
     font-size: 20px;
     background-color: inherit;
     border-radius: 15px;
     font-weight: 600;
-    color: rgb(253, 253, 253);
-    box-shadow: 0 0 0 2px #ff9100d0;
+    color: rgba(97, 115, 137, 0.9);
+    box-shadow: 0 0 0 2px rgba(97, 115, 137, 0.9);
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-    }
-
-.animated-button:hover {
-    box-shadow: 0 0 0 10px #ff9100d0;
-    color: rgba(187, 221, 215, 1);
 }
-
+ 
+.animated-button:hover {
+    box-shadow: 0 0 0 10px rgba(255, 166, 0, 0.873);
+    color: rgba(255, 166, 0, 0.873);
+}
 
 /*BODY*/
 
@@ -229,66 +227,60 @@ label{
 
 /*FOOTER*/
 
+/*FOOTER*/
 .container-footer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
 }
-
 .footer {
-    background-color: rgba(97, 115, 137, 1);
+    background-color: rgba(97, 115, 137, 0.9);
     color: #fff;
     padding: 20px 0;
 }
-
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .footer-logo img {
-    max-width: 150px;
+    width: 10vw;
+    height: auto;
+    max-width: 10vw;
+    max-height: auto;
 }
-
 .footer-info, .footer-social {
     text-align: center;
 }
-
 .footer-info p {
     margin: 5px 0;
 }
-
 .footer-social a {
     text-decoration: none;
     color: #fff;
     margin: 0 10px;
 }
-
-.footer-social i{
-    font-size: 50px;
-    align-self: center;
-    color: #ff9100d0;
-}
-
 .footer-links {
     text-align: center;
     margin-top: 30px;
 }
-
 .footer-links ul {
     list-style: none;
     margin-right: 100px;
-    padding: 0;
+    padding: 0; 
 }
-
 .footer-links li {
     margin: 10px 0;
 }
-
 .footer-links a {
     text-decoration: none;
     color: #fff;
+}
+.footer-social i{
+    font-size: 50px;
+    margin: 0 18px;
+    align-self: center;
+    color: #ff9100d0;
 }
 
 
