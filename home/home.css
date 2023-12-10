@@ -5,16 +5,16 @@
 .Mini-Biblioteca-8-rgba { color: rgba(236, 161, 124, 1); }
 
 * {
-   margin: 0px;
-   text-align: center;
-   font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body{
- background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./asets/fondo_libreria.jpg');
- background-size: cover;
- background-repeat: no-repeat;
- background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./asets/fondo_libreria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -73,8 +73,8 @@ body{
 /*HEADER*/
 
  /* Estilo para el encabezado y la barra de navegación */
- header {
-   background-color: rgba (245,245,245, 0.9); /* Fondo para el encabezado */
+header {
+   background-color: rgba(215, 215, 215, 0.9); /* Fondo para el encabezado */
    color: rgba(97, 115, 137, 1); /* Texto en color blanco */
    text-align: center; /* Centrar el contenido del encabezado */
    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
@@ -111,9 +111,9 @@ nav {
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
  
- .animated-button:hover {
-   box-shadow: 0 0 0 10px rgba(255, 166, 0, 0.873);
-   color: rgba(255, 166, 0, 0.873);
+.animated-button:hover {
+    box-shadow: 0 0 0 10px rgba(255, 166, 0, 0.873);
+    color: rgba(255, 166, 0, 0.873);
  }
 
 
@@ -147,7 +147,7 @@ h2 {
     width: 300px;
     padding: 20px;
     margin-right: 20px;
-    background-color: #e8e8e8da;
+    background-color:  rgba(215, 215, 215, 0.9);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     scroll-snap-align: start;
@@ -242,14 +242,15 @@ img {
 
 /*FOOTER*/
 
- .container-footer {
+.container-footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
 }
 
 .footer {
-    background-color: #333;
+    background-color: rgba(97, 115, 137, 0.9);
     color: #fff;
     padding: 20px 0;
 }
@@ -262,10 +263,12 @@ img {
 
 .footer-logo img {
     max-width: 150px;
+    align-items: start;
 }
 
 .footer-info, .footer-social {
     text-align: center;
+    align-items: center;
 }
 
 .footer-info p {
