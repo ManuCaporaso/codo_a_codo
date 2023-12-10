@@ -1,17 +1,26 @@
 .Mini-Biblioteca-6-rgba { color: rgba(97, 115, 137, 1); }
 .Mini-Biblioteca-7-rgba { color: rgba(187, 221, 215, 1); }
 .Mini-Biblioteca-8-rgba { color: rgba(236, 161, 124, 1); }
-.Mini-Biblioteca-9-rgba { color: rgba(202, 121, 104, 1); }
+
+@font-face {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjvWyNL4U.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
 
 *{
     margin: 0%;
     padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
     
 }
 
 .container{
-    background: #d69620;
+    background: rgba(255, 132, 0, 0.879);
     height: 100vh;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +28,9 @@
     
 }
 
-
+/*---Estilo de la tabla general---*/
 table {
-    background-color: #001F3F;
+    background-color: rgba(215, 215, 215, 0.9);
     border-collapse: collapse;
     width: 60vw;
     max-width: 60vw;
@@ -29,25 +38,26 @@ table {
     font-family: Arial, sans-serif;
     height:auto;
     
-  }
-
-th, td {
-    border: 0.1vw solid #dddddd;
-    padding: 0.8vw;
-    text-align: left;
-    color: #dddddd;
-    
-  }
-
-th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    color: #001F3F;
 }
 
+/*---Estilo de filas y columnas de la tabla---*/
+th, td {
+    border: 0.1vw solid rgba(97, 115, 137, 0.8);
+    padding: 0.8vw;
+    text-align: left;
+    color: rgba(97, 115, 137, 1);
+    
+}
+
+th {
+    background-color: whitesmoke;
+    font-weight: bold;
+    color: rgba(97, 115, 137, 1);
+}
+/*---Estilo de texto de encabezado---*/
 a{
-    font-size: 1.3rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
     color: aliceblue;
 }
@@ -64,7 +74,7 @@ a:hover{
 
 .menu{
     text-decoration: none;
-    background-color: #001F3F;
+    background-color: rgb(48, 72, 101);
     height: 10vh;
     display: flex;
     align-items: center;
@@ -77,7 +87,7 @@ a:hover{
 
 button{    
     margin-right: 2vh;
-    background-color: rgba(187, 221, 215, 1); /* Color de fondo */
+    background-color:  rgb(255, 138, 138); /* Color de fondo */
     color: white; /* Color del texto */
     padding: 0.5vw 3vh; /* Relleno interno */
     border: none; /* Quita el borde */
@@ -116,7 +126,7 @@ button:hover{
 .nuevo{
     color: #f2f2f2;
     margin-right: 2vh;
-    background-color: #2781dc50; /* Color de fondo */
+    background-color: rgba(97, 115, 137, 1); /* Color de fondo */
     color: white; /* Color del texto */
     padding: 0.5vw 3vh; /* Relleno interno */
     border: none; /* Quita el borde */
@@ -125,13 +135,14 @@ button:hover{
     text-decoration: none; /* Quita el subrayado predeterminado */
     display: inline-block; /* Mostrar como bloque en línea */
     font-size: 1.7vw; /* Tamaño de fuente */
+    font-family: 'Ubuntu', sans-serif;
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
 }
 
 
 img{
-    width: 6vw;
-    height: 10vh;
+    width: 4vw;
+    height: auto;
 }
 
 @media screen and (max-width:768px){

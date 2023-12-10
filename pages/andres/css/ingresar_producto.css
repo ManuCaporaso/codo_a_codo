@@ -1,10 +1,22 @@
+.Mini-Biblioteca-6-rgba { color: rgba(97, 115, 137, 1); }
+.Mini-Biblioteca-7-rgba { color: rgba(187, 221, 215, 1); }
+.Mini-Biblioteca-8-rgba { color: rgba(236, 161, 124, 1); }
+
+@font-face {
+	font-family: 'Ubuntu', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzjvWyNL4U.woff2) format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
 *{
     margin: 0%;
     padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container-form{
-    background: #d69620;
+    background: rgba(255, 132, 0, 0.879);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,7 +25,7 @@
 }
 
 form{
-    background-color: #001F3F;
+    background-color: rgba(97, 115, 137, 1);
     width: 60vw;
     height: 50vh;
     border-radius: 3vw;
@@ -30,14 +42,14 @@ form{
 
 label{
     font-size: 1.5rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Ubuntu', sans-serif;
     color: aliceblue;
 }
 
 button {
     padding: 0.2vw 0.3vh;
     font-size: 1.6vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: #ff9999;
     color: #ffffff;
     border: none;
@@ -77,7 +89,7 @@ button {
 
     a{
         font-size: 1.3rem;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Ubuntu', sans-serif;
         text-decoration: none;
         color: aliceblue;
     }
