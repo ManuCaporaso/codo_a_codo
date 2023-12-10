@@ -129,6 +129,15 @@
                 <br>
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Escribe el autor o título del libro">
+                    <label for="searchType">Filtrar por:</label>
+                    
+                    <select id="searchType">
+                        <option value="titulo">Título</option>
+                        <option value="autor">Autor</option>
+                        <option value="tematica">Temática</option>
+                        <option value="genero">Género</option>  
+                    
+                    </select>
                     <button onclick="searchBooks()">Buscar</button>
                 </div>
                 <ul id="results"></ul>

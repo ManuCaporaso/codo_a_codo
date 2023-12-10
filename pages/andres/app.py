@@ -62,7 +62,6 @@ def registro():
 
     return "Solicitud de post recibida"
     
-
 # Retornar todos los registros en un Json
 @app.route("/productos",  methods=['GET'])
 def productos():
@@ -78,8 +77,7 @@ def productos():
 
     return jsonify(data_serializada)
 
-
-# Modificar un registro
+# Borrar un registro
 @app.route('/update/<id>', methods=['PUT'])
 def update(id):
     # Buscar el registro a modificar en la tabla por su id
@@ -101,7 +99,7 @@ def update(id):
     
     return jsonify(data_serializada)
 
-   
+   # Modificar un registro
 @app.route('/borrar/<id>', methods=['DELETE'])
 def borrar(id):
     print(id)

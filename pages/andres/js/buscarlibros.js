@@ -26,17 +26,13 @@ const libros = [
 
 function searchBooks() {
     const searchInput = document.getElementById("searchInput").value.toLowerCase();
+    const searchType = document.getElementById("searchType").value.toLowerCase();
     const resultsDiv = document.getElementById("results");
     resultsDiv.innerHTML = "";
 
     const matchingBooks = libros.filter(libro =>
-        libro.titulo.toLowerCase().includes(searchInput) ||
-        libro.autor.toLowerCase().includes(searchInput) ||
-        libro.tematica.toLowerCase().includes(searchInput) ||
-        libro.genero.toLowerCase().includes(searchInput)
+        libro[searchType].toLowerCase().includes(searchInput)
     );
-
-
 
     if (matchingBooks.length === 0) {
         resultsDiv.innerHTML = "<p>No se encontraron resultados.</p>";
@@ -44,7 +40,7 @@ function searchBooks() {
         const ul = document.createElement("ul");
         matchingBooks.forEach(libro => {
             const li = document.createElement("li");
-            li.textContent = `Título: ${libro.titulo}, Autor: ${libro.autor}, Género: ${libro.genero}`;
+            li.textContent = `${searchType.charAt(0).toUpperCase() + searchType.slice(1)}: ${libro[searchType]}, Autor: ${libro.autor}, Género: ${libro.genero}`;
             ul.appendChild(li);
         });
         resultsDiv.appendChild(ul);
