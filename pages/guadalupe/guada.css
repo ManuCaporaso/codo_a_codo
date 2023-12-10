@@ -1,13 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 * {
-    margin: 0%;
-    /*Elimina todo margen que trae por defecto*/
-    padding: 0%;
-    /*Elimina todo relleno que trae por defecto*/
+    margin: 0%; /*Elimina todo margen que trae por defecto*/
+    padding: 0%;  /*Elimina todo relleno que trae por defecto*/
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+/* Estilo para el encabezado y la barra de navegación */
+header {
+    background-color: rgba(215, 215, 215, 0.9); /* Fondo para el encabezado */
+    color: rgba(97, 115, 137, 1); /* Texto en color blanco */
+    text-align: center; /* Centrar el contenido del encabezado */
+    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
+}
+/* Estilo para la barra de navegación */
+nav {
+    display: flex;
+    /* Mostrar elementos en una línea */
+    justify-content: center;
+    /* Distribuir los elementos de izquierda a derecha */
+    align-items: center;
+    /* Centrar verticalmente los elementos */
+    max-width: auto;
+    /* Ancho máximo de la barra de navegación */
+    margin: 0 auto;
+    /* Centrar la barra de navegación en la página */
+    padding: 0 20px;
+    /* Espacio interno en los lados izquierdo y derecho */
+}
+
+
+/*estilos de los botones del nav */
+
+.animated-button {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 15px;
+    border: none;
+    text-shadow: 5px 5px 5px rgba(255, 166, 0, 0.873);
+    font-size: 20px;
+    background-color: inherit;
+    border-radius: 15px;
+    font-weight: 600;
+    color: rgba(97, 115, 137, 0.9);
+    box-shadow: 0 0 0 2px rgba(97, 115, 137, 0.9);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 10px rgba(255, 166, 0, 0.873);
+    color: rgba(255, 166, 0, 0.873);
+}
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./asets/fondo_libreria.jpg');
@@ -53,66 +100,6 @@ body {
     margin-right: 20px;
     text-shadow: 5px 5px 10px black;
 }
-
-
-/*HEADER*/
-
-/* Estilo para el encabezado y la barra de navegación */
-header {
-    background-color: #ff9100d0;
-    /* Fondo oscuro para el encabezado */
-    color: #fff;
-    /* Texto en color blanco */
-    text-align: center;
-    /* Centrar el contenido del encabezado */
-    padding: 10px 0;
-    /* Espacio interno en la parte superior e inferior */
-}
-
-/* Estilo para la barra de navegación */
-nav {
-    display: flex;
-    /* Mostrar elementos en una línea */
-    justify-content: center;
-    /* Distribuir los elementos de izquierda a derecha */
-    align-items: center;
-    /* Centrar verticalmente los elementos */
-    max-width: auto;
-    /* Ancho máximo de la barra de navegación */
-    margin: 0 auto;
-    /* Centrar la barra de navegación en la página */
-    padding: 0 20px;
-    /* Espacio interno en los lados izquierdo y derecho */
-}
-
-
-/*estilos de los botones del nav */
-
-.animated-button {
-    position: relative;
-    display: inline-block;
-    margin: 5px;
-    padding: 12px 15px;
-    border: none;
-    text-shadow: 5px 5px 5px black;
-    font-size: 20px;
-    background-color: inherit;
-    border-radius: 15px;
-    font-weight: 600;
-    color: rgb(253, 253, 253);
-    box-shadow: 0 0 0 2px rgb(255, 238, 0);
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.animated-button:hover {
-    box-shadow: 0 0 0 10px #fffb0060;
-    color: #ff0000;
-}
-
-
-
 
 .form {
     background-color: whitesmoke;
