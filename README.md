@@ -3,7 +3,7 @@ Proyecto final de curso codo a codo
 
 # Nuestra Librería en Línea
 
-Nuestra Librería en Línea es una plataforma para amantes de la lectura que les permite explorar, comprar y gestionar libros de una manera fácil y cómoda. Este proyecto se ha desarrollado con [tecnología de vanguardia](#html , #css y #javascript) y está diseñado para proporcionar a los usuarios una experiencia de compra de libros en línea excepcional.
+Nuestra Librería en Línea es una plataforma para amantes de la lectura que les permite explorar, comprar y gestionar libros de una manera fácil y cómoda. Este proyecto se ha desarrollado con [tecnología de vanguardia](#html , #css y #javascript, mysql, flask, python) y está diseñado para proporcionar a los usuarios una experiencia de compra de libros en línea excepcional.
 
 ## Funcionalidades Clave
 
