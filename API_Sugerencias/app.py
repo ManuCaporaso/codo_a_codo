@@ -17,7 +17,7 @@ CORS(app)
 
 # Configurar a la app la DB
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://usuario:contraseña@localhost:3306/nombre_de_la_base_de_datos'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:nemo1234@localhost:3306/db_libros'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://23528books:codoacodo@23528books.mysql.pythonanywhere-services.com/23528books$default'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Crear un objeto db, para informar a la app que se trabajará con sqlalchemy
