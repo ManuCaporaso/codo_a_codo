@@ -12,7 +12,8 @@ Nuestra Librería en Línea es una plataforma para amantes de la lectura que les
 - Realiza compras seguras con opciones de pago en línea.
 - Administra tu perfil de usuario y preferencias de lectura, asi como un historial de compras.
 - Mantente actualizado con las [novedades y ofertas](#destacados) en la librería.
-
+- Manipulacion de datos mediante CRUD (Create, Read, Update, Delete) que interactúa con la API
+REST que hemos desarrollado en el back-end.
 
 
 ## Tecnología Utilizada
@@ -23,10 +24,8 @@ Nuestra Librería en Línea es una plataforma para amantes de la lectura que les
 ## Lista de Deseos
 
 Puedes agregar libros a tu lista de deseos para mantener un registro de los libros que deseas comprar en el futuro. Esta función es especialmente útil para no perder de vista los libros que te interesan.
-
-## Destacados
-
-Mantente actualizado con nuestras últimas novedades y ofertas. Ofrecemos descuentos especiales en libros seleccionados y mantenemos a nuestros usuarios informados sobre los eventos literarios más importantes.
+Puedes agregar libros desde la seccion de RECOMENDADOS - SUGERENCIAS DE COMPRAS,  agregar, borrar, editar y ver.
+Podes tener control de stock desde la seccion de ADMINISTRACION, agregar, borrar, editar y ver
 
 
 ## Autor
