@@ -1,0 +1,102 @@
+  /*BOTON IR ARRIBA*/
+  #scrollToTopBtn {
+    display: none; 
+    position: fixed;
+    bottom: 210px;
+    right: 20px;
+    z-index: 99;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* en esta seccion nosotros vamos a contenel el diseño que cambia cuando nosotros pasamos el mouse por 
+encima*/
+.scroll {
+    width: 140px;
+    height: 56px;
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    background: none;
+    position: relative;
+    padding-bottom: 2em;
+  }
+
+  .scroll > div,.scroll > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .scroll:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+  }
+
+  .scroll:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+  .text, .clone {
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  .scroll .clone > * {
+    transform: translateY(60px);
+  }
+
+  .scroll:hover .clone > * {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+
+  .scroll:hover .text > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+
+  .scroll:hover .clone > :nth-child(1) {
+    transition-delay: 0.15s;
+  }
+
+  .scroll:hover .clone > :nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .scroll:hover .clone > :nth-child(3) {
+    transition-delay: 0.25s;
+  }
+
+  .scroll:hover .clone > :nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  /* icon style and hover */
+  .scroll svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+  }
+
+  .scroll:hover svg {
+    transform: translateY(-50%) rotate(-90deg);
+  }
