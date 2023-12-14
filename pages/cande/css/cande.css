@@ -1,22 +1,18 @@
 /* Fuentes  */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-/* Estilo comun a toda la pagina */
-* {
-    margin: 0px;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
- }
 
-/*BODY*/
-body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fondo_libreria.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/* Estilo comun a toda la pagina */
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-/*BUSQUEDA DE TITULOS*/
 
 .principal {
     display: flex;
@@ -47,13 +43,6 @@ body{
     cursor: pointer;
 }
 
-.search i {
-    font-size: 20px;
-    margin: 0 15px;
-    color: #fff;
-    align-self: center;
-}
-
 .user a,
 .actions a {
     text-decoration: none;
@@ -63,59 +52,61 @@ body{
     text-shadow: 5px 5px 10px black;
 }
 
-.actions i{
-    color: #da0000;
-    margin-right: 10px;
-}
 
 /*HEADER*/
 
  /* Estilo para el encabezado y la barra de navegación */
  header {
-   background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
-   color: #fff; /* Texto en color blanco */
-   text-align: center; /* Centrar el contenido del encabezado */
-   padding: 10px 0; /* Espacio interno en la parte superior e inferior */
-}
-
-/* Estilo para la barra de navegación */
-nav {
-   display: flex; /* Mostrar elementos en una línea */
-   justify-content: center; /* Distribuir los elementos de izquierda a derecha */
-   align-items: center; /* Centrar verticalmente los elementos */
-   max-width: auto; /* Ancho máximo de la barra de navegación */
-   margin: 0 auto; /* Centrar la barra de navegación en la página */
-   padding: 0 20px; /* Espacio interno en los lados izquierdo y derecho */
-}
-
-
-/*estilos de los botones del nav */
-
-.animated-button {
-   position: relative;
-   display: inline-block;
-   margin: 5px;
-   padding: 12px 15px;
-   border: none;
-   text-shadow: 5px 5px 5px black;
-   font-size: 20px;
-   background-color: inherit;
-   border-radius: 15px;
-   font-weight: 600;
-   color: rgb(253, 253, 253);
-   box-shadow: 0 0 0 2px rgb(255, 238, 0);
-   cursor: pointer;
-   overflow: hidden;
-   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    background-color: #ff9100d0; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto en color blanco */
+    text-align: center; /* Centrar el contenido del encabezado */
+    padding: 10px 0; /* Espacio interno en la parte superior e inferior */
  }
  
- .animated-button:hover {
-   box-shadow: 0 0 0 10px #fffb0060;
-   color: #ff0000;
+ /* Estilo para la barra de navegación */
+ nav {
+    display: flex; /* Mostrar elementos en una línea */
+    justify-content: center; /* Distribuir los elementos de izquierda a derecha */
+    align-items: center; /* Centrar verticalmente los elementos */
+    max-width: auto; /* Ancho máximo de la barra de navegación */
+    margin: 0 auto; /* Centrar la barra de navegación en la página */
+    padding: 0 20px; /* Espacio interno en los lados izquierdo y derecho */
  }
+ 
+ 
+ /*estilos de los botones del nav */
+ 
+ .animated-button {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 15px;
+    border: none;
+    text-shadow: 5px 5px 5px black;
+    font-size: 20px;
+    background-color: inherit;
+    border-radius: 15px;
+    font-weight: 600;
+    color: rgb(253, 253, 253);
+    box-shadow: 0 0 0 2px rgb(255, 238, 0);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 10px #fffb0060;
+    color: #ff0000;
+  }
 
+/*BODY*/
 
-
+body{
+    background-image: url('../img/fondo_libreria\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 /*Estilo del titulo "iniciar sesion" y "registrarse" */
 .title { 
@@ -128,41 +119,47 @@ nav {
 
 }
 
-/*Estilo contenedor del formulario de Inicio de sesion*/
+/*Estilo contenedor del formulario de Inicio de sesion y registro*/
 fieldset{
     display: grid;
-    align-content: center;
-    background-color: rgba(241, 146, 22, 0.834);
+    justify-items: center;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(97, 115, 137, 1);
     border-radius: 30px;
     border-style: hidden;
     box-shadow: 3vw;
-    margin-left: auto;
-    margin-right: auto;
     margin: 15vh auto 15vh auto ;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
 
 }
+
+.email,.password {
+    justify-content: flex-start;    
+}
+/*Caracteristicas especificas del tamaño del contenedor de la pantalla de Incio de Sesion*/
 .inicio-sesion{
     
-    width: 30vw;
+    width: 25vw;
     min-height: 60vh;
 
 }
 
-/*Estilo contenedor del formulario de registro*/
+/*Caracteristicas especificas del tamaño del contenedor de la pantalla de registro*/
 .fieldset-registro{
 
     width: 30vw;
     min-height: 75vh;
 }
 
-
+/*Caractetisticas comunes para el boton de "Iniciar sesion" y "registrarse"*/
 .boton-sesion,.boton-registro{
+    font-family: "Ubuntu", sans-serif;
     text-align: center;
     font-size: 16px;
-    background-color: rgba(48, 48, 48, 0.5);
-    color: #fff;
+    background-color: rgba(187, 221, 215, 1);
+    color: rgba(97, 115, 137, 0.8);
     transition: background-color 0.5s;
 
     margin-top: 10%;    
@@ -175,21 +172,27 @@ fieldset{
 }
 
 
-
+/*Animacion de los botones del formulario*/
 .boton-sesion:hover, .boton-registro:hover{
-    background-color:  rgba(241, 146, 22, 0.834);
+    background-color:  #ff9100d0;
+    color: rgba(97, 115, 137, 1);
 }
 
-.registro{
+/*Caracteristica del texto "No tenes cuenta"*/
+.noRegistro{
     text-align: center; 
     margin-top: 5vh;
+    font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     color: rgb(255, 255, 255);
     }
+
+/*Caracteristicas del boton de "Registrate"*/
 .botonNoCuenta{
     background-color: inherit;
     border-style: hidden;
-    color: #fff;
+    color: #ff9100d0;
+    font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     transition: color 0.5s;
 }
@@ -197,9 +200,10 @@ fieldset{
     color: rgba(48, 48, 48, 1);
 }
 
+/*Estilos de los imput de inicio de sesion y registro y de sus respectivos label*/
 input{
     text-align: center;
-    background-color: rgb(236, 236, 236);
+    background-color: rgba(187, 221, 215, 1);
     height: 40px;
     margin-top: 2%;
     border-radius: 30px;
@@ -207,12 +211,14 @@ input{
     }
     
 label{
-
+    font-family: "Ubuntu", sans-serif;
     color:rgb(254, 254, 254);
     text-align: left;
     margin-left: 2vw;
     }
     
+
+
 
 /*FOOTER*/
 
@@ -254,8 +260,13 @@ label{
 
 .footer-social i{
     font-size: 50px;
+    margin: 0 18px;
     align-self: center;
     color: #ff9100d0;
+}
+
+.footer-social i{
+    width: 50px;
 }
 
 .footer-links {
@@ -265,7 +276,7 @@ label{
 
 .footer-links ul {
     list-style: none;
-    margin-right: 100px;
+    margin-right: 95px;
     padding: 0;
 }
 
@@ -278,5 +289,8 @@ label{
     color: #fff;
 }
 
+hr {
+    border: 1px solid #f1f1f1;
+}
 
 

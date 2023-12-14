@@ -27,7 +27,7 @@ boton.addEventListener("click", () => {
                     localStorage.setItem ("nombre", nombre)
                     localStorage.setItem("email", email)
                     localStorage.setItem ("clave", clave)
-                    window.location = "bienvenida.html";
+                    window.location = "cande.html";
                 }
                 else {
                     alert("Lo siento, tu navegador no soporta Web Storage. Por favor, actualiza tu navegador.");

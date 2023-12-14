@@ -117,64 +117,46 @@ nav {
 
 /*FORMULARIO DE CONTACTO*/
 
-.form {
-    background-color: whitesmoke;
-    border-radius: 10px;
-    color: #000000;
-    padding: 5em 5em;
-    margin: auto;
-    width: 90%;
-    max-width: 500px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0/ 30%);
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.form-titulo {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-
-.form-contenido {
-    margin-top: 3em;
-    display: grid;
-    gap: 0.5em;
-}
-
-.form-grupo {
-    position: relative;
-    --color: #5757577e;
-}
-
-.field {
+form {
+    max-width: 400px;
     width: 100%;
-    background: none;
-    color: black;
-    font-size: 1rem;
-    padding: .6em .3em;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 800px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-size: 20px;;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
     border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.field:focus {
-    border-color: #f7b945;
-
+button:hover {
+    background-color: #45a049;
 }
-
-.form-submit {
-    background: #f7b945;
-    color: #000000;
-    font-weight: 300px;
-    font-size: 1.2rem;
-    padding: 1rem 1rem;
-    border: none;
-    border-radius: .5em;
-}
-
 
 
 /*FOOTER*/
@@ -201,8 +183,7 @@ nav {
     max-width: 150px;
 }
 
-.footer-info,
-.footer-social {
+.footer-info, .footer-social {
     text-align: center;
 }
 
@@ -216,16 +197,15 @@ nav {
     margin: 0 10px;
 }
 
-
-.footer-social i {
-    width: 50px;
-}
-
 .footer-social i{
-    font-size: 40px;
+    font-size: 50px;
     margin: 0 18px;
     align-self: center;
     color: #ff9100d0;
+}
+
+.footer-social i{
+    width: 50px;
 }
 
 .footer-links {
@@ -235,7 +215,7 @@ nav {
 
 .footer-links ul {
     list-style: none;
-    margin-right: 100px;
+    margin-right: 95px;
     padding: 0;
 }
 
