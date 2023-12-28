@@ -30,9 +30,8 @@ Podes tener control de stock desde la seccion de ADMINISTRACION, agregar, borrar
 
 ## Autor
 
-- [Manuel Alejandro Caporaso](https://github.com/ManuCaporaso) - Coordinación general y estructuracion.
-- [Candela Catelli Adem](https://github.com/CandelaCatelliAdem) - Diseño y desarrollo de registro.
-- [Isis Guadalupe Julian](https://github.com/GuadalupeJulian) - Diseño y desarrollo de contacto.
+- [Manuel Alejandro Caporaso](https://github.com/ManuCaporaso) - Coordinación general, estructuracion y desarrollo.
+- [Candela Catelli Adem](https://github.com/CandelaCatelliAdem) - Diseño y desarrollo de registro, inicio de sesion y contacto.
 - [Andrés Arnaldo Chaloupka](https://github.com/arnaldochaloupka) - Diseño y desarrollo de contenido.
 
 
